@@ -72,6 +72,8 @@ Results are from live runs on September 19, 2026 against `~typesafe/jev-latest` 
 | 13 | [Lead scoring](recipes/13-lead-scoring) | Rank inbound sales leads, explainably | 4 Scores + Noul | The top 5 by score are exactly the 5 priority-A leads |
 | 14 | [Browser agent](recipes/14-browser-agent) | Navigate real websites, search and fill forms | Choice + 2 Nouls per step | 5/6 live tasks passed, $0.0005–0.003 each; the failure is a documented near-miss |
 
+**More every week:** three new recipes land every Monday until mid-October 2026. See the [roadmap](ROADMAP.md).
+
 Also here: [`examples/quickstart.mjs`](examples/quickstart.mjs), a shared client in [`lib/jev.mjs`](lib/jev.mjs), regex candidate finders in [`lib/candidates.mjs`](lib/candidates.mjs), the full [guide](docs/GUIDE.md), and a [case study](docs/case-study-templatesgrokbot.md) that files 3,267 real templates.
 
 ## How every recipe works
