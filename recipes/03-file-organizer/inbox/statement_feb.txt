@@ -1,0 +1,8 @@
+NORTHBANK - Current Account Statement
+Statement period: 1 February 2026 - 28 February 2026    Issued: 1 March 2026
+Account holder: Tom Visser    Account ending 8821
+Opening balance            2,413.20
+Salary - Harbor & Pine    +3,150.00
+Rent - Keystone Lettings  -1,250.00
+Card payments              -864.37
+Closing balance            3,448.83

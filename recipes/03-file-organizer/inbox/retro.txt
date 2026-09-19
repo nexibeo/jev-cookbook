@@ -1,0 +1,5 @@
+Sprint 14 retrospective (27 Feb 2026)
+What went well: release on time, fewer flaky tests.
+What didn't: two late scope changes, on-call pages at night.
+We'll try: freeze scope two days before release; rotate on-call weekly.
+Owner for follow-up: Priya.

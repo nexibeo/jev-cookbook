@@ -1,0 +1,6 @@
+Weekly product sync - 10 March 2026
+Attendees: Priya, Tom, Aiko, Ben
+- Checkout redesign: A/B test starts 17 March, Aiko owns the rollout
+- Mobile crash rate down to 0.4% after last release
+- Decision: postpone the loyalty program to Q3
+Action items: Tom to write the pricing FAQ by Friday; Ben to book user interviews.

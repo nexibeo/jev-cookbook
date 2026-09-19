@@ -1,0 +1,248 @@
+{
+  "recipe": "10-search-rerank",
+  "ran_at": "2026-09-19T09:00:48.261Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 16,
+    "input_tokens": 29601,
+    "cost_usd": 0.001243,
+    "median_ms": 410
+  },
+  "metrics": {
+    "keyword_top1": 0.125,
+    "jev_top1": 0.75,
+    "jev_all_articles_top1": 1,
+    "unanswerable_recognised": 2,
+    "answer_in_candidates": 0.75,
+    "top_k": 12
+  },
+  "results": [
+    {
+      "q": "i forgot my login, how do i get back in",
+      "answer": "reset-password",
+      "keyword_top1": "reset-password",
+      "answer_in_candidates": true,
+      "jev_top1": "reset-password",
+      "jev_confidence": 0.97,
+      "jev_top3": [
+        "reset-password",
+        "none",
+        "import-csv"
+      ],
+      "jev_all_top1": "reset-password"
+    },
+    {
+      "q": "can my colleague join my workspace",
+      "answer": "invite-team",
+      "keyword_top1": "remove-member",
+      "answer_in_candidates": true,
+      "jev_top1": "invite-team",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "invite-team",
+        "rate-limits",
+        "roles-permissions"
+      ],
+      "jev_all_top1": "invite-team"
+    },
+    {
+      "q": "how do I stop paying for this",
+      "answer": "cancel-subscription",
+      "keyword_top1": null,
+      "answer_in_candidates": true,
+      "jev_top1": "cancel-subscription",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "cancel-subscription",
+        "reset-password",
+        "import-csv"
+      ],
+      "jev_all_top1": "cancel-subscription"
+    },
+    {
+      "q": "will I get my money back if I cancel my yearly plan",
+      "answer": "refund-policy",
+      "keyword_top1": "cancel-subscription",
+      "answer_in_candidates": false,
+      "jev_top1": "cancel-subscription",
+      "jev_confidence": 0.82,
+      "jev_top3": [
+        "cancel-subscription",
+        "none",
+        "import-csv"
+      ],
+      "jev_all_top1": "refund-policy"
+    },
+    {
+      "q": "we need an invoice with our tax number",
+      "answer": "invoices-vat",
+      "keyword_top1": "invoices-vat",
+      "answer_in_candidates": true,
+      "jev_top1": "invoices-vat",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "invoices-vat",
+        "two-factor",
+        "remove-member"
+      ],
+      "jev_all_top1": "invoices-vat"
+    },
+    {
+      "q": "does it work on the train without internet",
+      "answer": "offline-mode",
+      "keyword_top1": null,
+      "answer_in_candidates": false,
+      "jev_top1": null,
+      "jev_confidence": 0.99,
+      "jev_top3": [
+        "none",
+        "two-factor",
+        "upgrade-plan"
+      ],
+      "jev_all_top1": "offline-mode"
+    },
+    {
+      "q": "can we log in with our Microsoft accounts",
+      "answer": "sso-setup",
+      "keyword_top1": null,
+      "answer_in_candidates": false,
+      "jev_top1": null,
+      "jev_confidence": 0.9,
+      "jev_top3": [
+        "none",
+        "reset-password",
+        "plans-pricing"
+      ],
+      "jev_all_top1": "sso-setup"
+    },
+    {
+      "q": "my card was declined, what happens to my account",
+      "answer": "payment-failed",
+      "keyword_top1": "delete-account",
+      "answer_in_candidates": true,
+      "jev_top1": "payment-failed",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "payment-failed",
+        "reset-password",
+        "import-csv"
+      ],
+      "jev_all_top1": "payment-failed"
+    },
+    {
+      "q": "how many API calls can I make",
+      "answer": "rate-limits",
+      "keyword_top1": "api-keys",
+      "answer_in_candidates": true,
+      "jev_top1": "rate-limits",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "rate-limits",
+        "api-keys",
+        "invite-team"
+      ],
+      "jev_all_top1": "rate-limits"
+    },
+    {
+      "q": "get notified when a record changes in our own system",
+      "answer": "webhooks",
+      "keyword_top1": "zapier",
+      "answer_in_candidates": true,
+      "jev_top1": "webhooks",
+      "jev_confidence": 0.9,
+      "jev_top3": [
+        "webhooks",
+        "zapier",
+        "none"
+      ],
+      "jev_all_top1": "webhooks"
+    },
+    {
+      "q": "who can edit and who can only look",
+      "answer": "roles-permissions",
+      "keyword_top1": null,
+      "answer_in_candidates": true,
+      "jev_top1": "roles-permissions",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "roles-permissions",
+        "upgrade-plan",
+        "import-csv"
+      ],
+      "jev_all_top1": "roles-permissions"
+    },
+    {
+      "q": "move all my stuff out to a spreadsheet",
+      "answer": "export-data",
+      "keyword_top1": null,
+      "answer_in_candidates": true,
+      "jev_top1": "export-data",
+      "jev_confidence": 1,
+      "jev_top3": [
+        "export-data",
+        "plans-pricing",
+        "invite-team"
+      ],
+      "jev_all_top1": "export-data"
+    },
+    {
+      "q": "is our data stored in Europe",
+      "answer": "data-location",
+      "keyword_top1": "export-data",
+      "answer_in_candidates": true,
+      "jev_top1": "data-location",
+      "jev_confidence": 0.99,
+      "jev_top3": [
+        "data-location",
+        "gdpr",
+        "none"
+      ],
+      "jev_all_top1": "data-location"
+    },
+    {
+      "q": "is the site down right now",
+      "answer": "uptime-status",
+      "keyword_top1": null,
+      "answer_in_candidates": false,
+      "jev_top1": null,
+      "jev_confidence": 1,
+      "jev_top3": [
+        "none",
+        "invite-team",
+        "cancel-subscription"
+      ],
+      "jev_all_top1": "uptime-status"
+    },
+    {
+      "q": "can I use this with Slack huddles to record meetings",
+      "answer": null,
+      "keyword_top1": "zapier",
+      "answer_in_candidates": true,
+      "jev_top1": null,
+      "jev_confidence": 0.98,
+      "jev_top3": [
+        "none",
+        "zapier",
+        "plans-pricing"
+      ],
+      "jev_all_top1": null
+    },
+    {
+      "q": "do you have a desktop app for Linux",
+      "answer": null,
+      "keyword_top1": "api-keys",
+      "answer_in_candidates": true,
+      "jev_top1": null,
+      "jev_confidence": 1,
+      "jev_top3": [
+        "none",
+        "reset-password",
+        "offline-mode"
+      ],
+      "jev_all_top1": null
+    }
+  ]
+}

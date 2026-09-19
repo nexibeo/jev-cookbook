@@ -1,0 +1,276 @@
+{
+  "recipe": "02-database-indexing",
+  "ran_at": "2026-09-19T09:00:29.724Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 36,
+    "input_tokens": 32281,
+    "cost_usd": 0.001356,
+    "median_ms": 366
+  },
+  "metrics": {
+    "category_accuracy": 0.9722222222222222,
+    "rows": 36,
+    "tags": 41
+  },
+  "misses": [
+    "Silk Pillowcase: home-kitchen (expected beauty-personal-care)"
+  ],
+  "facets": [
+    {
+      "title": "Bamboo Cutting Board Set (3 pcs)",
+      "category": "home-kitchen",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "eco-friendly"
+    },
+    {
+      "title": "Noise-Cancelling Wireless Earbuds",
+      "category": "electronics",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "portable"
+    },
+    {
+      "title": "Ultralight 2-Person Tent",
+      "category": "outdoor-sports",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "fitness, portable, sleep"
+    },
+    {
+      "title": "Wooden Rainbow Stacker",
+      "category": "toys-kids",
+      "confidence": 1,
+      "audience": "kids",
+      "tags": "eco-friendly, handmade, learning"
+    },
+    {
+      "title": "Merino Wool Crew Socks (3 pairs)",
+      "category": "fashion",
+      "confidence": 0.95,
+      "audience": "adults",
+      "tags": "fitness, portable"
+    },
+    {
+      "title": "Smart Wi-Fi Plug (2-pack)",
+      "category": "electronics",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "smart-home"
+    },
+    {
+      "title": "Vitamin C Brightening Serum",
+      "category": "beauty-personal-care",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": null
+    },
+    {
+      "title": "Orthopedic Memory-Foam Dog Bed",
+      "category": "pets",
+      "confidence": 1,
+      "audience": "pet-owners",
+      "tags": "sleep"
+    },
+    {
+      "title": "Single-Origin Ethiopian Coffee Beans 1 kg",
+      "category": "food-drink",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": null
+    },
+    {
+      "title": "Ergonomic Mesh Office Chair",
+      "category": "office",
+      "confidence": 1,
+      "audience": "professionals",
+      "tags": null
+    },
+    {
+      "title": "The Pragmatic Programmer, 20th Anniversary Edition",
+      "category": "books-media",
+      "confidence": 1,
+      "audience": "professionals",
+      "tags": "learning"
+    },
+    {
+      "title": "Kids' Bike Helmet with LED Light",
+      "category": "outdoor-sports",
+      "confidence": 0.54,
+      "audience": "kids",
+      "tags": "fitness, portable"
+    },
+    {
+      "title": "Cast-Iron Dutch Oven 5.5 qt",
+      "category": "home-kitchen",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "eco-friendly"
+    },
+    {
+      "title": "Adjustable Dumbbells 2-24 kg",
+      "category": "outdoor-sports",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "fitness"
+    },
+    {
+      "title": "Hand-Thrown Ceramic Mug",
+      "category": "home-kitchen",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "eco-friendly, handmade"
+    },
+    {
+      "title": "Waterproof Hiking Jacket",
+      "category": "outdoor-sports",
+      "confidence": 0.92,
+      "audience": "adults",
+      "tags": "fitness, portable"
+    },
+    {
+      "title": "Mechanical Keyboard, Hot-Swappable",
+      "category": "electronics",
+      "confidence": 0.74,
+      "audience": "adults",
+      "tags": null
+    },
+    {
+      "title": "Interactive Cat Feather Wand",
+      "category": "pets",
+      "confidence": 1,
+      "audience": "pet-owners",
+      "tags": "fitness"
+    },
+    {
+      "title": "Organic Loose-Leaf Green Tea Sampler",
+      "category": "food-drink",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "eco-friendly, gift-idea"
+    },
+    {
+      "title": "Beginner Watercolor Paint Set",
+      "category": "office",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "learning"
+    },
+    {
+      "title": "Portable Power Bank 20,000 mAh",
+      "category": "electronics",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "portable"
+    },
+    {
+      "title": "Reusable Beeswax Food Wraps (set of 6)",
+      "category": "home-kitchen",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "eco-friendly, handmade"
+    },
+    {
+      "title": "STEM Robot Building Kit",
+      "category": "toys-kids",
+      "confidence": 1,
+      "audience": "kids",
+      "tags": "learning, smart-home"
+    },
+    {
+      "title": "Silk Pillowcase",
+      "category": "home-kitchen",
+      "confidence": 0.86,
+      "audience": "adults",
+      "tags": "sleep"
+    },
+    {
+      "title": "Noise Machine for Babies",
+      "category": "toys-kids",
+      "confidence": 0.94,
+      "audience": "kids",
+      "tags": "sleep"
+    },
+    {
+      "title": "Leather Laptop Sleeve 14-inch",
+      "category": "office",
+      "confidence": 0.99,
+      "audience": "professionals",
+      "tags": "handmade, portable"
+    },
+    {
+      "title": "Trail Running Shoes",
+      "category": "outdoor-sports",
+      "confidence": 0.86,
+      "audience": "adults",
+      "tags": "fitness, portable"
+    },
+    {
+      "title": "Grain-Free Salmon Dog Food 10 kg",
+      "category": "pets",
+      "confidence": 1,
+      "audience": "pet-owners",
+      "tags": null
+    },
+    {
+      "title": "Vinyl Record: Kind of Blue",
+      "category": "books-media",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": null
+    },
+    {
+      "title": "Standing Desk Converter",
+      "category": "office",
+      "confidence": 1,
+      "audience": "professionals",
+      "tags": null
+    },
+    {
+      "title": "Kids' Picture Dictionary",
+      "category": "books-media",
+      "confidence": 0.88,
+      "audience": "kids",
+      "tags": "learning"
+    },
+    {
+      "title": "Electric Toothbrush with 3 Modes",
+      "category": "beauty-personal-care",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "portable"
+    },
+    {
+      "title": "Insulated Stainless Water Bottle 1 L",
+      "category": "home-kitchen",
+      "confidence": 0.53,
+      "audience": "everyone",
+      "tags": "portable"
+    },
+    {
+      "title": "Artisan Dark Chocolate Gift Box",
+      "category": "food-drink",
+      "confidence": 1,
+      "audience": "adults",
+      "tags": "gift-idea, handmade"
+    },
+    {
+      "title": "Teen Graphic Hoodie",
+      "category": "fashion",
+      "confidence": 1,
+      "audience": "teens",
+      "tags": null
+    },
+    {
+      "title": "Aquarium Starter Kit 60 L",
+      "category": "pets",
+      "confidence": 1,
+      "audience": "pet-owners",
+      "tags": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+How to reset your NetFly X2 router
+Hold the recessed RESET button on the back for 10 seconds until the lights flash.
+Wait two minutes, then connect to the network named NetFly-Setup and open 192.168.0.1.
+Default admin password is printed on the label under the router.
+Troubleshooting: if the internet light stays red, restart your modem first.

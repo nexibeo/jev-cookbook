@@ -1,0 +1,687 @@
+{
+  "recipe": "01-support-triage",
+  "ran_at": "2026-09-19T09:00:27.425Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 34,
+    "input_tokens": 20959,
+    "cost_usd": 0.00088,
+    "median_ms": 391
+  },
+  "metrics": {
+    "department_accuracy": 1,
+    "auto_routed": 32,
+    "auto_routed_correct": 32,
+    "ambiguous_mean_confidence": 0.8,
+    "urgent_accuracy": 0.9411764705882353,
+    "frustration_accuracy": 0.8529411764705882,
+    "refund_accuracy": 1
+  },
+  "results": [
+    {
+      "id": "T01",
+      "text": "I was charged twice for my March subscription. Please refund the duplicate payment.",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 1,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.13,
+        "frustration": 0.95,
+        "refund": 0.99
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T02",
+      "text": "The app crashes every time I open the camera scanner on my Pixel 8. Started after yesterday's update.",
+      "label": {
+        "department": "technical",
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.13,
+        "frustration": 1.03,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T03",
+      "text": "Where is my order #58213? Tracking hasn't moved in 9 days and it was supposed to be a birthday present for this Saturday!!",
+      "label": {
+        "department": "shipping",
+        "urgent": true,
+        "frustration": 2,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.5,
+        "frustration": 1.08,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T04",
+      "text": "Hi, do you offer a discount for teams of 50+ seats? We're comparing you with two other vendors this month.",
+      "label": {
+        "department": "sales",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "sales",
+        "confidence": 1,
+        "urgent": 0.06,
+        "frustration": 0,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T05",
+      "text": "How do I change the email address on my account? I no longer have access to the old one.",
+      "label": {
+        "department": "account",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.09,
+        "frustration": 0.35,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T06",
+      "text": "Your checkout page returns a 500 error for every customer on our store. We are losing sales right now, fix this ASAP.",
+      "label": {
+        "department": "technical",
+        "urgent": true,
+        "frustration": 2,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.96,
+        "frustration": 1.9,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T07",
+      "text": "Please delete my account and all my personal data under GDPR.",
+      "label": {
+        "department": "account",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.02,
+        "frustration": 0.02,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T08",
+      "text": "The package arrived with the glass lid shattered. I'd like a replacement, not my money back.",
+      "label": {
+        "department": "shipping",
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.05,
+        "frustration": 1,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T09",
+      "text": "Can I get an invoice with our company VAT number on it for last month's payment?",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.04,
+        "frustration": 0,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T10",
+      "text": "This is the third time I'm writing. Nobody answers. Cancel my plan and give me my money back for this month, you people are useless.",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 2,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.33,
+        "frustration": 2,
+        "refund": 0.98
+      },
+      "route": "auto",
+      "priority": "P2"
+    },
+    {
+      "id": "T11",
+      "text": "Password reset emails never arrive. I've checked spam. I can't log in at all.",
+      "label": {
+        "department": "account",
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.24,
+        "frustration": 1.13,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T12",
+      "text": "Webhook deliveries to our endpoint have been failing with timeouts since 02:00 UTC. Our order sync is down.",
+      "label": {
+        "department": "technical",
+        "urgent": true,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.9,
+        "frustration": 0.99,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T13",
+      "text": "Do you ship to Norway, and how long does it usually take?",
+      "label": {
+        "department": "shipping",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.03,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T14",
+      "text": "We'd like a demo of the enterprise plan for our operations team next week.",
+      "label": {
+        "department": "sales",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "sales",
+        "confidence": 1,
+        "urgent": 0.02,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T15",
+      "text": "My card was declined but the money left my bank account. What happened?",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.61,
+        "frustration": 0.92,
+        "refund": 0.3
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T16",
+      "text": "Exports to CSV cut off after 1,000 rows. Is that a limit or a bug?",
+      "label": {
+        "department": "technical",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.07,
+        "frustration": 0.33,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T17",
+      "text": "Someone logged into my account from another country and changed my password. Please lock it immediately.",
+      "label": {
+        "department": "account",
+        "urgent": true,
+        "frustration": 2,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.95,
+        "frustration": 1.03,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T18",
+      "text": "I returned the shoes two weeks ago and still haven't received my refund.",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 1,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 0.99,
+        "urgent": 0.07,
+        "frustration": 1,
+        "refund": 0.91
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T19",
+      "text": "Can I switch my delivery address? The order hasn't shipped yet.",
+      "label": {
+        "department": "shipping",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.13,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T20",
+      "text": "What's the difference between the Pro and Business plans? Is SSO included in Pro?",
+      "label": {
+        "department": "sales",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "sales",
+        "confidence": 1,
+        "urgent": 0.03,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T21",
+      "text": "Dark mode makes the chart labels invisible in the dashboard. Minor, but annoying.",
+      "label": {
+        "department": "technical",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.03,
+        "frustration": 1,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T22",
+      "text": "How do I add a second admin to our workspace?",
+      "label": {
+        "department": "account",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.04,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T23",
+      "text": "I was billed for the annual plan but I only ever signed up for the free trial. Refund it now or I'm disputing the charge with my bank today.",
+      "label": {
+        "department": "billing",
+        "urgent": true,
+        "frustration": 2,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.89,
+        "frustration": 2,
+        "refund": 0.98
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T24",
+      "text": "The courier left my parcel at the wrong house and the neighbour says they never got it.",
+      "label": {
+        "department": "shipping",
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.19,
+        "frustration": 0.99,
+        "refund": 0.05
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T25",
+      "text": "API returns 401 for valid keys since this morning. Our production integration is completely down.",
+      "label": {
+        "department": "technical",
+        "urgent": true,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.93,
+        "frustration": 1.12,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P1"
+    },
+    {
+      "id": "T26",
+      "text": "Is there a nonprofit discount? We're a registered charity.",
+      "label": {
+        "department": "sales",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "sales",
+        "confidence": 0.99,
+        "urgent": 0.02,
+        "frustration": 0,
+        "refund": 0.03
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T27",
+      "text": "Please merge my two accounts, I accidentally signed up twice with different emails.",
+      "label": {
+        "department": "account",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "account",
+        "confidence": 1,
+        "urgent": 0.04,
+        "frustration": 0.05,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T28",
+      "text": "Thanks for the quick fix yesterday, everything works again!",
+      "label": {
+        "department": "technical",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 1,
+        "urgent": 0.04,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T29",
+      "text": "My order came with the wrong size. How do I send it back for the right one?",
+      "label": {
+        "department": "shipping",
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "shipping",
+        "confidence": 1,
+        "urgent": 0.05,
+        "frustration": 0.6,
+        "refund": 0.02
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T30",
+      "text": "Why did my price go up from $12 to $19 without any notice? I want the old price or a refund of the difference.",
+      "label": {
+        "department": "billing",
+        "urgent": false,
+        "frustration": 2,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.15,
+        "frustration": 1.13,
+        "refund": 0.96
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T31",
+      "text": "I upgraded to Business yesterday but none of the new features show up in my dashboard.",
+      "label": {
+        "department": "technical",
+        "acceptable": [
+          "technical",
+          "billing"
+        ],
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 0.92,
+        "urgent": 0.2,
+        "frustration": 0.99,
+        "refund": 0.03
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T32",
+      "text": "My order arrived fine, but you charged me shipping twice on the same order.",
+      "label": {
+        "department": "billing",
+        "acceptable": [
+          "billing",
+          "shipping"
+        ],
+        "urgent": false,
+        "frustration": 1,
+        "refund": true
+      },
+      "got": {
+        "department": "billing",
+        "confidence": 1,
+        "urgent": 0.15,
+        "frustration": 1,
+        "refund": 0.64
+      },
+      "route": "auto",
+      "priority": "P3"
+    },
+    {
+      "id": "T33",
+      "text": "Since your update this morning the login button does nothing, so I can't get into my account.",
+      "label": {
+        "department": "technical",
+        "acceptable": [
+          "technical",
+          "account"
+        ],
+        "urgent": false,
+        "frustration": 1,
+        "refund": false
+      },
+      "got": {
+        "department": "technical",
+        "confidence": 0.68,
+        "urgent": 0.53,
+        "frustration": 1,
+        "refund": 0.01
+      },
+      "route": "review",
+      "priority": "P1"
+    },
+    {
+      "id": "T34",
+      "text": "Before we buy: does the mobile app keep working offline when our drivers lose signal?",
+      "label": {
+        "department": "sales",
+        "acceptable": [
+          "sales",
+          "technical"
+        ],
+        "urgent": false,
+        "frustration": 0,
+        "refund": false
+      },
+      "got": {
+        "department": "sales",
+        "confidence": 0.6,
+        "urgent": 0.09,
+        "frustration": 0,
+        "refund": 0.01
+      },
+      "route": "review",
+      "priority": "P3"
+    }
+  ]
+}

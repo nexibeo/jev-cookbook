@@ -1,0 +1,33 @@
+{
+  "customers": {
+    "customer_id": { "samples": ["C-10442", "C-10443", "C-10987", "C-11002", "C-11019"], "label": { "type": "identifier", "pii": false, "sensitivity": 1 } },
+    "full_name": { "samples": ["Maria Lopez", "Tom Visser", "Aiko Tanaka", "Ben O'Connor", "Priya Nair"], "label": { "type": "person-name", "pii": true, "sensitivity": 2 } },
+    "email": { "samples": ["maria.lopez@example.com", "tvisser@example.org", "aiko.t@example.jp", "ben.oc@example.ie", "priya@example.in"], "label": { "type": "email", "pii": true, "sensitivity": 2 } },
+    "mobile": { "samples": ["+44 7700 900123", "+31 6 1234 5678", "+81 90 1234 5678", "+353 85 123 4567", "+91 98765 43210"], "label": { "type": "phone", "pii": true, "sensitivity": 2 } },
+    "dob": { "samples": ["1988-07-02", "1991-11-23", "1979-03-14", "2001-05-30", "1985-09-09"], "label": { "type": "date-of-birth", "pii": true, "sensitivity": 2 } },
+    "street": { "samples": ["Flat 3, 22 Elm Road", "Keizersgracht 120", "2-14-5 Shibuya", "8 Grafton St", "12 MG Road"], "label": { "type": "postal-address", "pii": true, "sensitivity": 2 } },
+    "city": { "samples": ["Leeds", "Amsterdam", "Tokyo", "Dublin", "Bengaluru"], "label": { "type": "location", "pii": false, "sensitivity": 1 } },
+    "loyalty_tier": { "samples": ["gold", "silver", "bronze", "silver", "gold"], "label": { "type": "category-code", "pii": false, "sensitivity": 1 } },
+    "marketing_opt_in": { "samples": ["true", "false", "true", "true", "false"], "label": { "type": "boolean-flag", "pii": false, "sensitivity": 1 } },
+    "created_at": { "samples": ["2025-11-02T09:14:00Z", "2025-12-19T17:40:12Z", "2026-01-05T08:01:55Z", "2026-02-11T12:30:00Z", "2026-03-01T21:05:47Z"], "label": { "type": "timestamp", "pii": false, "sensitivity": 1 } },
+    "agent_notes": { "samples": ["Prefers WhatsApp on +44 7700 900123", "Asked to be called after 6pm", "Moving to Rotterdam in May, new address to follow", "VIP - husband is on the board", "No notes"], "label": { "type": "free-text", "pii": true, "sensitivity": 2 } }
+  },
+  "payments": {
+    "payment_id": { "samples": ["pay_7Hf2kQ", "pay_9Lm3xR", "pay_2Qa8vT", "pay_5Nb1yW", "pay_8Kc4zE"], "label": { "type": "identifier", "pii": false, "sensitivity": 1 } },
+    "card_number": { "samples": ["4539 1488 0343 6467", "5555 5555 5555 4444", "4111 1111 1111 1111", "3782 822463 10005", "6011 1111 1111 1117"], "label": { "type": "payment-card", "pii": true, "sensitivity": 3 } },
+    "card_last4": { "samples": ["4417", "8821", "0005", "1117", "6467"], "label": { "type": "payment-card", "pii": true, "sensitivity": 1 } },
+    "iban": { "samples": ["GB33BUKB20201555555555", "NL91ABNA0417164300", "DE89370400440532013000", "IE29AIBK93115212345678", "FR1420041010050500013M02606"], "label": { "type": "bank-account", "pii": true, "sensitivity": 3 } },
+    "amount": { "samples": ["49.00", "1250.00", "12.99", "320.50", "8.75"], "label": { "type": "money-amount", "pii": false, "sensitivity": 1 } },
+    "currency": { "samples": ["EUR", "GBP", "USD", "EUR", "JPY"], "label": { "type": "category-code", "pii": false, "sensitivity": 0 } },
+    "client_ip": { "samples": ["81.2.69.160", "2001:db8::1", "203.0.113.42", "198.51.100.7", "192.0.2.15"], "label": { "type": "ip-address", "pii": true, "sensitivity": 2 } },
+    "paid_at": { "samples": ["2026-03-01 10:22:05", "2026-03-01 11:40:17", "2026-03-02 09:03:44", "2026-03-02 15:51:09", "2026-03-03 08:12:31"], "label": { "type": "timestamp", "pii": false, "sensitivity": 1 } }
+  },
+  "patients": {
+    "nhs_number": { "samples": ["943 476 5919", "401 023 2137", "485 777 3456", "999 000 1234", "123 456 7881"], "label": { "type": "national-id", "pii": true, "sensitivity": 3 } },
+    "allergies": { "samples": ["penicillin", "none known", "peanuts, latex", "sulfa drugs", "shellfish"], "label": { "type": "health-info", "pii": true, "sensitivity": 3 } },
+    "visit_reason": { "samples": ["follow-up blood test", "persistent cough for 3 weeks", "anxiety medication review", "sprained ankle", "annual diabetes check"], "label": { "type": "health-info", "pii": true, "sensitivity": 3 } },
+    "clinic": { "samples": ["Riverside Medical Practice", "Park Lane Surgery", "Riverside Medical Practice", "Hillview Clinic", "Park Lane Surgery"], "label": { "type": "organization", "pii": false, "sensitivity": 1 } },
+    "home_lat_lng": { "samples": ["53.8008,-1.5491", "52.3676,4.9041", "35.6595,139.7005", "53.3438,-6.2546", "12.9716,77.5946"], "label": { "type": "geo-coordinates", "pii": true, "sensitivity": 2 } },
+    "website": { "samples": ["https://riverside.example.nhs.uk", "https://parklane.example.nhs.uk", "https://hillview.example.com", "", "https://riverside.example.nhs.uk"], "label": { "type": "url", "pii": false, "sensitivity": 0 } }
+  }
+}

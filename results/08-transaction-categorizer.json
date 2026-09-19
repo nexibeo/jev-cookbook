@@ -1,0 +1,343 @@
+{
+  "recipe": "08-transaction-categorizer",
+  "ran_at": "2026-09-19T09:00:45.809Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 36,
+    "input_tokens": 22122,
+    "cost_usd": 0.000929,
+    "median_ms": 422
+  },
+  "metrics": {
+    "accuracy": 0.9722222222222222
+  },
+  "results": [
+    {
+      "date": "2026-03-01",
+      "description": "PAYROLL HARBOR & PINE LTD",
+      "amount": 3150,
+      "expected": "salary",
+      "got": "salary",
+      "confidence": 1,
+      "recurring": 0.32
+    },
+    {
+      "date": "2026-03-01",
+      "description": "KEYSTONE LETTINGS RENT MAR",
+      "amount": -1250,
+      "expected": "housing",
+      "got": "housing",
+      "confidence": 1,
+      "recurring": 0.85
+    },
+    {
+      "date": "2026-03-02",
+      "description": "TESCO STORES 2291 LEEDS",
+      "amount": -54.18,
+      "expected": "groceries",
+      "got": "groceries",
+      "confidence": 1,
+      "recurring": 0.06
+    },
+    {
+      "date": "2026-03-02",
+      "description": "NETFLIX.COM 866-579-7172",
+      "amount": -15.99,
+      "expected": "subscriptions",
+      "got": "subscriptions",
+      "confidence": 1,
+      "recurring": 0.96
+    },
+    {
+      "date": "2026-03-03",
+      "description": "UBER *TRIP HELP.UBER.COM",
+      "amount": -18.4,
+      "expected": "transport",
+      "got": "transport",
+      "confidence": 0.99,
+      "recurring": 0.14
+    },
+    {
+      "date": "2026-03-03",
+      "description": "PRET A MANGER #0412",
+      "amount": -7.85,
+      "expected": "eating-out",
+      "got": "eating-out",
+      "confidence": 1,
+      "recurring": 0.04
+    },
+    {
+      "date": "2026-03-04",
+      "description": "SHELL OIL 57442 WETHERBY",
+      "amount": -62.3,
+      "expected": "car",
+      "got": "car",
+      "confidence": 1,
+      "recurring": 0.05
+    },
+    {
+      "date": "2026-03-04",
+      "description": "AMZN Mktp UK*2K3L81",
+      "amount": -23.99,
+      "expected": "shopping",
+      "got": "shopping",
+      "confidence": 1,
+      "recurring": 0.14
+    },
+    {
+      "date": "2026-03-05",
+      "description": "SPOTIFY P2A1B3C4D5",
+      "amount": -11.99,
+      "expected": "subscriptions",
+      "got": "subscriptions",
+      "confidence": 0.99,
+      "recurring": 0.73
+    },
+    {
+      "date": "2026-03-05",
+      "description": "YORKSHIRE WATER DD",
+      "amount": -38,
+      "expected": "utilities",
+      "got": "utilities",
+      "confidence": 1,
+      "recurring": 0.85
+    },
+    {
+      "date": "2026-03-06",
+      "description": "BRITISH GAS DD 00331",
+      "amount": -96.5,
+      "expected": "utilities",
+      "got": "utilities",
+      "confidence": 1,
+      "recurring": 0.88
+    },
+    {
+      "date": "2026-03-06",
+      "description": "DELIVEROO UK",
+      "amount": -24.6,
+      "expected": "eating-out",
+      "got": "eating-out",
+      "confidence": 1,
+      "recurring": 0.14
+    },
+    {
+      "date": "2026-03-07",
+      "description": "PUREGYM MONTHLY",
+      "amount": -24.99,
+      "expected": "health-fitness",
+      "got": "health-fitness",
+      "confidence": 1,
+      "recurring": 0.97
+    },
+    {
+      "date": "2026-03-07",
+      "description": "BOOTS 1123 BRIGGATE",
+      "amount": -12.45,
+      "expected": "health-fitness",
+      "got": "shopping",
+      "confidence": 0.92,
+      "recurring": 0.07
+    },
+    {
+      "date": "2026-03-08",
+      "description": "TFL TRAVEL CH",
+      "amount": -8.1,
+      "expected": "transport",
+      "got": "transport",
+      "confidence": 0.97,
+      "recurring": 0.31
+    },
+    {
+      "date": "2026-03-08",
+      "description": "ALDI 45 HEADINGLEY",
+      "amount": -31.72,
+      "expected": "groceries",
+      "got": "groceries",
+      "confidence": 1,
+      "recurring": 0.06
+    },
+    {
+      "date": "2026-03-09",
+      "description": "TRANSFER TO SAVINGS 4471",
+      "amount": -500,
+      "expected": "transfers",
+      "got": "transfers",
+      "confidence": 1,
+      "recurring": 0.12
+    },
+    {
+      "date": "2026-03-09",
+      "description": "PAYPAL *STEAMGAMES",
+      "amount": -19.99,
+      "expected": "entertainment",
+      "got": "entertainment",
+      "confidence": 0.99,
+      "recurring": 0.11
+    },
+    {
+      "date": "2026-03-10",
+      "description": "VUE CINEMAS LEEDS",
+      "amount": -21,
+      "expected": "entertainment",
+      "got": "entertainment",
+      "confidence": 1,
+      "recurring": 0.06
+    },
+    {
+      "date": "2026-03-10",
+      "description": "HMRC SELF ASSESSMENT",
+      "amount": -850,
+      "expected": "taxes",
+      "got": "taxes",
+      "confidence": 1,
+      "recurring": 0.12
+    },
+    {
+      "date": "2026-03-11",
+      "description": "INTEREST PAID",
+      "amount": 4.12,
+      "expected": "other-income",
+      "got": "other-income",
+      "confidence": 1,
+      "recurring": 0.12
+    },
+    {
+      "date": "2026-03-11",
+      "description": "EASYJET 0HXQ2L",
+      "amount": -142.98,
+      "expected": "travel",
+      "got": "travel",
+      "confidence": 1,
+      "recurring": 0.09
+    },
+    {
+      "date": "2026-03-12",
+      "description": "AIRBNB * HMZ4K2",
+      "amount": -310,
+      "expected": "travel",
+      "got": "travel",
+      "confidence": 1,
+      "recurring": 0.19
+    },
+    {
+      "date": "2026-03-12",
+      "description": "COSTA COFFEE 1880",
+      "amount": -3.4,
+      "expected": "eating-out",
+      "got": "eating-out",
+      "confidence": 1,
+      "recurring": 0.09
+    },
+    {
+      "date": "2026-03-13",
+      "description": "EE LIMITED MOBILE",
+      "amount": -22,
+      "expected": "utilities",
+      "got": "utilities",
+      "confidence": 1,
+      "recurring": 0.77
+    },
+    {
+      "date": "2026-03-13",
+      "description": "FREELANCE INV-0311 BRIGHTLINE",
+      "amount": 720,
+      "expected": "freelance-income",
+      "got": "freelance-income",
+      "confidence": 1,
+      "recurring": 0.08
+    },
+    {
+      "date": "2026-03-14",
+      "description": "DR A MENSAH PRIVATE CLINIC",
+      "amount": -65,
+      "expected": "health-fitness",
+      "got": "health-fitness",
+      "confidence": 1,
+      "recurring": 0.21
+    },
+    {
+      "date": "2026-03-14",
+      "description": "SAINSBURYS S/MKTS",
+      "amount": -47.9,
+      "expected": "groceries",
+      "got": "groceries",
+      "confidence": 1,
+      "recurring": 0.11
+    },
+    {
+      "date": "2026-03-15",
+      "description": "ADOBE *CREATIVE CLOUD",
+      "amount": -19.97,
+      "expected": "subscriptions",
+      "got": "subscriptions",
+      "confidence": 1,
+      "recurring": 0.93
+    },
+    {
+      "date": "2026-03-15",
+      "description": "IKEA LEEDS",
+      "amount": -129,
+      "expected": "shopping",
+      "got": "shopping",
+      "confidence": 1,
+      "recurring": 0.05
+    },
+    {
+      "date": "2026-03-16",
+      "description": "DVLA VEHICLE TAX",
+      "amount": -16.5,
+      "expected": "car",
+      "got": "car",
+      "confidence": 0.99,
+      "recurring": 0.23
+    },
+    {
+      "date": "2026-03-16",
+      "description": "REFUND AMZN Mktp UK",
+      "amount": 23.99,
+      "expected": "refunds",
+      "got": "refunds",
+      "confidence": 1,
+      "recurring": 0.06
+    },
+    {
+      "date": "2026-03-17",
+      "description": "COUNCIL TAX LEEDS CC",
+      "amount": -142,
+      "expected": "housing",
+      "got": "housing",
+      "confidence": 0.99,
+      "recurring": 0.44
+    },
+    {
+      "date": "2026-03-17",
+      "description": "JUST EAT.CO.UK",
+      "amount": -18.2,
+      "expected": "eating-out",
+      "got": "eating-out",
+      "confidence": 1,
+      "recurring": 0.14
+    },
+    {
+      "date": "2026-03-18",
+      "description": "NATIONAL RAIL ONLINE",
+      "amount": -54.6,
+      "expected": "transport",
+      "got": "transport",
+      "confidence": 1,
+      "recurring": 0.18
+    },
+    {
+      "date": "2026-03-18",
+      "description": "CHARITY: OXFAM DD",
+      "amount": -10,
+      "expected": "gifts-donations",
+      "got": "gifts-donations",
+      "confidence": 1,
+      "recurring": 0.21
+    }
+  ]
+}

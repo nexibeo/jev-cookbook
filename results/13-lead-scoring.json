@@ -1,0 +1,251 @@
+{
+  "recipe": "13-lead-scoring",
+  "ran_at": "2026-09-19T09:00:52.187Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 16,
+    "input_tokens": 11195,
+    "cost_usd": 0.00047,
+    "median_ms": 421
+  },
+  "metrics": {
+    "priority_accuracy": 0.8125,
+    "a_leads_in_top": "5/5"
+  },
+  "weights": {
+    "fit": 0.35,
+    "authority": 0.2,
+    "need": 0.2,
+    "timing": 0.15,
+    "budget": 0.1
+  },
+  "results": [
+    {
+      "id": "L07",
+      "name": "VP Operations, Medisupply Distribution (850 employees)",
+      "expected": "A",
+      "priority": "A",
+      "total": 0.962,
+      "parts": {
+        "fit": 1,
+        "authority": 1,
+        "need": 1,
+        "timing": 0.96,
+        "budget": 0.68
+      }
+    },
+    {
+      "id": "L01",
+      "name": "Head of Logistics, Northline Freight (220 employees)",
+      "expected": "A",
+      "priority": "A",
+      "total": 0.9139166666666666,
+      "parts": {
+        "fit": 1,
+        "authority": 0.9233333333333333,
+        "need": 1,
+        "timing": 0.555,
+        "budget": 0.96
+      }
+    },
+    {
+      "id": "L14",
+      "name": "Director of Fleet, Coastal Ambulance Transport (380 employees)",
+      "expected": "A",
+      "priority": "A",
+      "total": 0.9059999999999998,
+      "parts": {
+        "fit": 0.9666666666666667,
+        "authority": 0.9933333333333333,
+        "need": 1,
+        "timing": 0.48,
+        "budget": 0.97
+      }
+    },
+    {
+      "id": "L04",
+      "name": "CTO, Parcelwise (600 employees)",
+      "expected": "A",
+      "priority": "A",
+      "total": 0.905,
+      "parts": {
+        "fit": 1,
+        "authority": 1,
+        "need": 1,
+        "timing": 1,
+        "budget": 0.05
+      }
+    },
+    {
+      "id": "L11",
+      "name": "Logistics Coordinator, BuildRight Supplies (95 employees)",
+      "expected": "A",
+      "priority": "A",
+      "total": 0.7901666666666668,
+      "parts": {
+        "fit": 0.9966666666666667,
+        "authority": 0.4266666666666667,
+        "need": 1,
+        "timing": 1,
+        "budget": 0.06
+      }
+    },
+    {
+      "id": "L03",
+      "name": "Operations Manager, FreshBox Meal Kits (140 employees)",
+      "expected": "B",
+      "priority": "A",
+      "total": 0.7643333333333332,
+      "parts": {
+        "fit": 1,
+        "authority": 0.6666666666666666,
+        "need": 0.985,
+        "timing": 0.5,
+        "budget": 0.09
+      }
+    },
+    {
+      "id": "L09",
+      "name": "IT Manager, Greenway Waste Services (410 employees)",
+      "expected": "B",
+      "priority": "B",
+      "total": 0.57,
+      "parts": {
+        "fit": 0.98,
+        "authority": 0.5499999999999999,
+        "need": 0.56,
+        "timing": 0,
+        "budget": 0.05
+      }
+    },
+    {
+      "id": "L16",
+      "name": "Operations Analyst, Urban Grocer (180 employees)",
+      "expected": "B",
+      "priority": "B",
+      "total": 0.5460833333333333,
+      "parts": {
+        "fit": 0.9333333333333332,
+        "authority": 0.3333333333333333,
+        "need": 0.5,
+        "timing": 0.325,
+        "budget": 0.04
+      }
+    },
+    {
+      "id": "L13",
+      "name": "Founder, QuickCourier (12 employees)",
+      "expected": "C",
+      "priority": "B",
+      "total": 0.5264166666666668,
+      "parts": {
+        "fit": 0.3566666666666667,
+        "authority": 0.9466666666666667,
+        "need": 0.43,
+        "timing": 0.815,
+        "budget": 0.04
+      }
+    },
+    {
+      "id": "L06",
+      "name": "Marketing Intern, CargoLink (300 employees)",
+      "expected": "B",
+      "priority": "B",
+      "total": 0.50325,
+      "parts": {
+        "fit": 0.9866666666666667,
+        "authority": 0.0033333333333333335,
+        "need": 0.485,
+        "timing": 0.375,
+        "budget": 0.04
+      }
+    },
+    {
+      "id": "L05",
+      "name": "Owner, Tom's Bakery (6 employees)",
+      "expected": "C",
+      "priority": "C",
+      "total": 0.4365,
+      "parts": {
+        "fit": 0.3333333333333333,
+        "authority": 0.9166666666666666,
+        "need": 0.455,
+        "timing": 0.27,
+        "budget": 0.05
+      }
+    },
+    {
+      "id": "L10",
+      "name": "Procurement, Global Retail Group (45,000 employees)",
+      "expected": "B",
+      "priority": "C",
+      "total": 0.3989166666666667,
+      "parts": {
+        "fit": 0.3933333333333333,
+        "authority": 0.48,
+        "need": 0.445,
+        "timing": 0.435,
+        "budget": 0.11
+      }
+    },
+    {
+      "id": "L15",
+      "name": "Journalist, Logistics Weekly",
+      "expected": "C",
+      "priority": "C",
+      "total": 0.23349999999999999,
+      "parts": {
+        "fit": 0,
+        "authority": 0.16,
+        "need": 0.48,
+        "timing": 0.69,
+        "budget": 0.02
+      }
+    },
+    {
+      "id": "L02",
+      "name": "Student, University of Leeds",
+      "expected": "C",
+      "priority": "C",
+      "total": 0.145,
+      "parts": {
+        "fit": 0,
+        "authority": 0,
+        "need": 0.355,
+        "timing": 0.48,
+        "budget": 0.02
+      }
+    },
+    {
+      "id": "L08",
+      "name": "Freelance developer",
+      "expected": "C",
+      "priority": "C",
+      "total": 0.061166666666666675,
+      "parts": {
+        "fit": 0.0033333333333333335,
+        "authority": 0,
+        "need": 0.2,
+        "timing": 0.12,
+        "budget": 0.02
+      }
+    },
+    {
+      "id": "L12",
+      "name": "Unknown",
+      "expected": "C",
+      "priority": "C",
+      "total": 0.002,
+      "parts": {
+        "fit": 0,
+        "authority": 0,
+        "need": 0,
+        "timing": 0,
+        "budget": 0.02
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "jev-cookbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jeroen Erne (https://nexibeo.com)",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "quickstart": "node --env-file-if-exists=.env examples/quickstart.mjs",
+    "01": "node --env-file-if-exists=.env recipes/01-support-triage/triage.mjs",
+    "02": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning recipes/02-database-indexing/index-products.mjs --fresh",
+    "03": "node --env-file-if-exists=.env recipes/03-file-organizer/organize.mjs",
+    "04": "node --env-file-if-exists=.env recipes/04-multi-label-tagging/tag.mjs",
+    "05": "node --env-file-if-exists=.env recipes/05-taxonomy-tree/classify-tree.mjs",
+    "06": "node --env-file-if-exists=.env recipes/06-dedupe-records/dedupe.mjs",
+    "07": "node --env-file-if-exists=.env recipes/07-pii-column-scanner/scan.mjs",
+    "08": "node --env-file-if-exists=.env recipes/08-transaction-categorizer/categorize.mjs",
+    "09": "node --env-file-if-exists=.env recipes/09-extract-by-picking/extract.mjs",
+    "10": "node --env-file-if-exists=.env recipes/10-search-rerank/search.mjs",
+    "11": "node --env-file-if-exists=.env recipes/11-log-triage/triage-logs.mjs",
+    "12": "node --env-file-if-exists=.env recipes/12-moderation-guardrails/moderate.mjs",
+    "13": "node --env-file-if-exists=.env recipes/13-lead-scoring/score-leads.mjs",
+    "14": "node --env-file-if-exists=.env recipes/14-browser-agent/run-tests.mjs",
+    "browser": "node --env-file-if-exists=.env recipes/14-browser-agent/agent.mjs",
+    "all": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning scripts/run-all.mjs"
+  },
+  "optionalDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

@@ -1,0 +1,8 @@
+MARIA LOPEZ
+Data Analyst | Valencia, Spain | Updated February 2026
+EXPERIENCE
+Senior Data Analyst, Solmar Retail (2022 - present): built weekly sales dashboards in Looker, cut reporting time by 60%.
+Data Analyst, Medi+ Clinics (2019 - 2022): automated patient-flow reports with Python and SQL.
+EDUCATION
+MSc Statistics, University of Valencia, 2019
+SKILLS: SQL, Python, dbt, Looker, A/B testing

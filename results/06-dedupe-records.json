@@ -1,0 +1,430 @@
+{
+  "recipe": "06-dedupe-records",
+  "ran_at": "2026-09-19T09:01:24.750Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 48,
+    "input_tokens": 25700,
+    "cost_usd": 0.001079,
+    "median_ms": 369
+  },
+  "metrics": {
+    "with code facts": {
+      "automatic": 22,
+      "review": 2,
+      "wrong_automatic": 0,
+      "merge_precision": 1
+    },
+    "records only": {
+      "automatic": 24,
+      "review": 0,
+      "wrong_automatic": 1,
+      "merge_precision": 1
+    }
+  },
+  "runs": {
+    "with code facts": {
+      "automatic": 22,
+      "review": 2,
+      "wrong_automatic": 0,
+      "merge_precision": 1,
+      "results": [
+        {
+          "a": "International Business Machines",
+          "b": "IBM Corp.",
+          "same": true,
+          "score": 1.96,
+          "confidence": 0.94,
+          "decision": "merge"
+        },
+        {
+          "a": "Apple Inc.",
+          "b": "Apple Bank for Savings",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Acme Plumbing Ltd",
+          "b": "ACME Plumbing",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.98,
+          "decision": "merge"
+        },
+        {
+          "a": "Acme Plumbing Ltd",
+          "b": "Acme Plumbing Ltd",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "St. John's Hospital",
+          "b": "Saint John Hospital",
+          "same": true,
+          "score": 1.93,
+          "confidence": 0.89,
+          "decision": "merge"
+        },
+        {
+          "a": "Google LLC",
+          "b": "Alphabet Inc.",
+          "same": false,
+          "score": 0.08,
+          "confidence": 0.88,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Blue Door Bakery",
+          "b": "Bluedoor Bakery & Cafe",
+          "same": true,
+          "score": 1.73,
+          "confidence": 0.59,
+          "decision": "merge"
+        },
+        {
+          "a": "Blue Door Bakery",
+          "b": "Blue Door Books",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Müller & Söhne GmbH",
+          "b": "Mueller und Soehne GmbH",
+          "same": true,
+          "score": 1.74,
+          "confidence": 0.61,
+          "decision": "merge"
+        },
+        {
+          "a": "Northwind Traders",
+          "b": "Northwind Traders",
+          "same": true,
+          "score": 2,
+          "confidence": 0.99,
+          "decision": "merge"
+        },
+        {
+          "a": "Contoso Pharmacy",
+          "b": "Contoso Pharmaceuticals plc",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "J. Smith Consulting",
+          "b": "John Smith Consulting Inc.",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.99,
+          "decision": "merge"
+        },
+        {
+          "a": "J. Smith Consulting",
+          "b": "Jane Smith Consulting",
+          "same": false,
+          "score": 0.05,
+          "confidence": 0.93,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Riverside Dental Care",
+          "b": "Riverside Dental",
+          "same": true,
+          "score": 1.19,
+          "confidence": 0.51,
+          "decision": "review"
+        },
+        {
+          "a": "Tesla, Inc.",
+          "b": "Tesla Electric Services LLC",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Café Luna",
+          "b": "Cafe Luna Lisbon",
+          "same": true,
+          "score": 1.92,
+          "confidence": 0.88,
+          "decision": "merge"
+        },
+        {
+          "a": "Greenfield Primary School",
+          "b": "Greenfield High School",
+          "same": false,
+          "score": 0.07,
+          "confidence": 0.89,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Delta Air Lines",
+          "b": "Delta Faucet Company",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Harbor & Pine Ltd",
+          "b": "Harbour and Pine Limited",
+          "same": true,
+          "score": 1.8,
+          "confidence": 0.7,
+          "decision": "merge"
+        },
+        {
+          "a": "Summit Fitness",
+          "b": "Summit Fitness",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Oak & Ember Restaurant",
+          "b": "Oak and Ember",
+          "same": true,
+          "score": 1.81,
+          "confidence": 0.71,
+          "decision": "merge"
+        },
+        {
+          "a": "Pixel Perfect Studio",
+          "b": "Pixel Perfect Photography",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Mercy Medical Center",
+          "b": "Mercy Medical Ctr",
+          "same": true,
+          "score": 2,
+          "confidence": 1,
+          "decision": "merge"
+        },
+        {
+          "a": "Evergreen Landscaping",
+          "b": "Evergreen Lawn & Garden",
+          "same": true,
+          "score": 0.52,
+          "confidence": 0.26,
+          "decision": "review"
+        }
+      ]
+    },
+    "records only": {
+      "automatic": 24,
+      "review": 0,
+      "wrong_automatic": 1,
+      "merge_precision": 1,
+      "results": [
+        {
+          "a": "International Business Machines",
+          "b": "IBM Corp.",
+          "same": true,
+          "score": 1.97,
+          "confidence": 0.95,
+          "decision": "merge"
+        },
+        {
+          "a": "Apple Inc.",
+          "b": "Apple Bank for Savings",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Acme Plumbing Ltd",
+          "b": "ACME Plumbing",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.98,
+          "decision": "merge"
+        },
+        {
+          "a": "Acme Plumbing Ltd",
+          "b": "Acme Plumbing Ltd",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "St. John's Hospital",
+          "b": "Saint John Hospital",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.98,
+          "decision": "merge"
+        },
+        {
+          "a": "Google LLC",
+          "b": "Alphabet Inc.",
+          "same": false,
+          "score": 0.06,
+          "confidence": 0.91,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Blue Door Bakery",
+          "b": "Bluedoor Bakery & Cafe",
+          "same": true,
+          "score": 1.93,
+          "confidence": 0.9,
+          "decision": "merge"
+        },
+        {
+          "a": "Blue Door Bakery",
+          "b": "Blue Door Books",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Müller & Söhne GmbH",
+          "b": "Mueller und Soehne GmbH",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.99,
+          "decision": "merge"
+        },
+        {
+          "a": "Northwind Traders",
+          "b": "Northwind Traders",
+          "same": true,
+          "score": 2,
+          "confidence": 1,
+          "decision": "merge"
+        },
+        {
+          "a": "Contoso Pharmacy",
+          "b": "Contoso Pharmaceuticals plc",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "J. Smith Consulting",
+          "b": "John Smith Consulting Inc.",
+          "same": true,
+          "score": 1.99,
+          "confidence": 0.99,
+          "decision": "merge"
+        },
+        {
+          "a": "J. Smith Consulting",
+          "b": "Jane Smith Consulting",
+          "same": false,
+          "score": 0.04,
+          "confidence": 0.95,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Riverside Dental Care",
+          "b": "Riverside Dental",
+          "same": true,
+          "score": 1.7,
+          "confidence": 0.56,
+          "decision": "merge"
+        },
+        {
+          "a": "Tesla, Inc.",
+          "b": "Tesla Electric Services LLC",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Café Luna",
+          "b": "Cafe Luna Lisbon",
+          "same": true,
+          "score": 1.98,
+          "confidence": 0.97,
+          "decision": "merge"
+        },
+        {
+          "a": "Greenfield Primary School",
+          "b": "Greenfield High School",
+          "same": false,
+          "score": 0.06,
+          "confidence": 0.91,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Delta Air Lines",
+          "b": "Delta Faucet Company",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Harbor & Pine Ltd",
+          "b": "Harbour and Pine Limited",
+          "same": true,
+          "score": 1.92,
+          "confidence": 0.88,
+          "decision": "merge"
+        },
+        {
+          "a": "Summit Fitness",
+          "b": "Summit Fitness",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Oak & Ember Restaurant",
+          "b": "Oak and Ember",
+          "same": true,
+          "score": 1.97,
+          "confidence": 0.96,
+          "decision": "merge"
+        },
+        {
+          "a": "Pixel Perfect Studio",
+          "b": "Pixel Perfect Photography",
+          "same": false,
+          "score": 0,
+          "confidence": 1,
+          "decision": "keep separate"
+        },
+        {
+          "a": "Mercy Medical Center",
+          "b": "Mercy Medical Ctr",
+          "same": true,
+          "score": 2,
+          "confidence": 1,
+          "decision": "merge"
+        },
+        {
+          "a": "Evergreen Landscaping",
+          "b": "Evergreen Lawn & Garden",
+          "same": true,
+          "score": 0.36,
+          "confidence": 0.46,
+          "decision": "keep separate"
+        }
+      ]
+    }
+  }
+}

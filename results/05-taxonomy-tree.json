@@ -1,0 +1,34 @@
+{
+  "recipe": "05-taxonomy-tree",
+  "ran_at": "2026-09-19T09:00:38.528Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 108,
+    "input_tokens": 110077,
+    "cost_usd": 0.004623,
+    "median_ms": 343
+  },
+  "metrics": {
+    "flat": {
+      "accuracy": 1,
+      "top3": 1,
+      "parent_accuracy": 1,
+      "calls": 36,
+      "input_tokens": 58356,
+      "cost_usd": 0.0024509520000000006,
+      "misses": []
+    },
+    "tree": {
+      "accuracy": 1,
+      "top3": 1,
+      "parent_accuracy": 1,
+      "calls": 72,
+      "input_tokens": 51721,
+      "cost_usd": 0.0021722819999999998,
+      "misses": []
+    }
+  }
+}

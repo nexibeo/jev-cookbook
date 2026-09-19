@@ -1,0 +1,21 @@
+{
+  "ideal_customer": "We sell route-planning and fleet-tracking software to logistics and delivery companies with 50 to 1,000 employees. Our buyers run operations, logistics or IT.",
+  "leads": [
+    { "id": "L01", "name": "Head of Logistics, Northline Freight (220 employees)", "message": "Our dispatchers still plan 60 vans a day in spreadsheets. We need route optimisation live before peak season in October and have budget approved.", "priority": "A" },
+    { "id": "L02", "name": "Student, University of Leeds", "message": "Hi, I'm writing my thesis on last-mile delivery. Could I get a free account for research?", "priority": "C" },
+    { "id": "L03", "name": "Operations Manager, FreshBox Meal Kits (140 employees)", "message": "We're evaluating tools to track our 35 delivery vans in real time. Currently comparing three vendors, decision next quarter.", "priority": "B" },
+    { "id": "L04", "name": "CTO, Parcelwise (600 employees)", "message": "We run 400 couriers across the UK and our in-house routing has hit its limits. Can we talk this week about an API integration?", "priority": "A" },
+    { "id": "L05", "name": "Owner, Tom's Bakery (6 employees)", "message": "I have one van for deliveries around town. Is there a cheap plan?", "priority": "C" },
+    { "id": "L06", "name": "Marketing Intern, CargoLink (300 employees)", "message": "My manager asked me to collect brochures from route planning vendors.", "priority": "B" },
+    { "id": "L07", "name": "VP Operations, Medisupply Distribution (850 employees)", "message": "We need temperature-sensitive delivery tracking for pharmacies. Current contract ends in 6 weeks; we have a budget of about 80k per year.", "priority": "A" },
+    { "id": "L08", "name": "Freelance developer", "message": "Do you have an affiliate program? I build websites for small businesses.", "priority": "C" },
+    { "id": "L09", "name": "IT Manager, Greenway Waste Services (410 employees)", "message": "Looking into options to replace our old GPS trackers sometime next year. Just gathering information for now.", "priority": "B" },
+    { "id": "L10", "name": "Procurement, Global Retail Group (45,000 employees)", "message": "Please send your standard security questionnaire answers and pricing for a potential global RFP.", "priority": "B" },
+    { "id": "L11", "name": "Logistics Coordinator, BuildRight Supplies (95 employees)", "message": "Our drivers keep missing delivery windows and customers complain daily. My boss wants a demo, can you do Thursday?", "priority": "A" },
+    { "id": "L12", "name": "Unknown", "message": "asdf test test", "priority": "C" },
+    { "id": "L13", "name": "Founder, QuickCourier (12 employees)", "message": "We're a small but fast-growing courier startup. We'd love a demo but can't pay much yet.", "priority": "C" },
+    { "id": "L14", "name": "Director of Fleet, Coastal Ambulance Transport (380 employees)", "message": "We need live tracking for 90 patient-transport vehicles and reporting for compliance. Budget is set aside for this year.", "priority": "A" },
+    { "id": "L15", "name": "Journalist, Logistics Weekly", "message": "I'm writing an article on route-planning software. Could someone answer a few questions?", "priority": "C" },
+    { "id": "L16", "name": "Operations Analyst, Urban Grocer (180 employees)", "message": "Researching how other grocers plan delivery routes, might recommend a tool to leadership later this year.", "priority": "B" }
+  ]
+}

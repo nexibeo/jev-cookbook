@@ -1,0 +1,347 @@
+{
+  "recipe": "07-pii-column-scanner",
+  "ran_at": "2026-09-19T09:00:43.469Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 25,
+    "input_tokens": 23797,
+    "cost_usd": 0.000999,
+    "median_ms": 355
+  },
+  "metrics": {
+    "type_accuracy": 1,
+    "personal_accuracy": 0.92,
+    "sensitivity_accuracy": 1,
+    "restricted_caught": "5/5"
+  },
+  "results": [
+    {
+      "column": "customers.customer_id",
+      "label": {
+        "type": "identifier",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "identifier",
+      "type_confidence": 1,
+      "personal": 0.72,
+      "sensitivity": 1.01,
+      "action": "none"
+    },
+    {
+      "column": "customers.full_name",
+      "label": {
+        "type": "person-name",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "person-name",
+      "type_confidence": 1,
+      "personal": 0.97,
+      "sensitivity": 2,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "customers.email",
+      "label": {
+        "type": "email",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "email",
+      "type_confidence": 1,
+      "personal": 0.94,
+      "sensitivity": 2,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "customers.mobile",
+      "label": {
+        "type": "phone",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "phone",
+      "type_confidence": 1,
+      "personal": 0.96,
+      "sensitivity": 2,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "customers.dob",
+      "label": {
+        "type": "date-of-birth",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "date-of-birth",
+      "type_confidence": 0.99,
+      "personal": 0.94,
+      "sensitivity": 2.25,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "customers.street",
+      "label": {
+        "type": "postal-address",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "postal-address",
+      "type_confidence": 1,
+      "personal": 0.73,
+      "sensitivity": 2,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "customers.city",
+      "label": {
+        "type": "location",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "location",
+      "type_confidence": 1,
+      "personal": 0.19,
+      "sensitivity": 1.02,
+      "action": "none"
+    },
+    {
+      "column": "customers.loyalty_tier",
+      "label": {
+        "type": "category-code",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "category-code",
+      "type_confidence": 1,
+      "personal": 0.37,
+      "sensitivity": 0.7,
+      "action": "none"
+    },
+    {
+      "column": "customers.marketing_opt_in",
+      "label": {
+        "type": "boolean-flag",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "boolean-flag",
+      "type_confidence": 1,
+      "personal": 0.35,
+      "sensitivity": 0.83,
+      "action": "none"
+    },
+    {
+      "column": "customers.created_at",
+      "label": {
+        "type": "timestamp",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "timestamp",
+      "type_confidence": 1,
+      "personal": 0.16,
+      "sensitivity": 1,
+      "action": "none"
+    },
+    {
+      "column": "customers.agent_notes",
+      "label": {
+        "type": "free-text",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "free-text",
+      "type_confidence": 1,
+      "personal": 0.95,
+      "sensitivity": 2.04,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "payments.payment_id",
+      "label": {
+        "type": "identifier",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "identifier",
+      "type_confidence": 1,
+      "personal": 0.09,
+      "sensitivity": 1.02,
+      "action": "none"
+    },
+    {
+      "column": "payments.card_number",
+      "label": {
+        "type": "payment-card",
+        "pii": true,
+        "sensitivity": 3
+      },
+      "type": "payment-card",
+      "type_confidence": 0.99,
+      "personal": 0.85,
+      "sensitivity": 2.99,
+      "action": "encrypt + restrict access"
+    },
+    {
+      "column": "payments.card_last4",
+      "label": {
+        "type": "payment-card",
+        "pii": true,
+        "sensitivity": 1
+      },
+      "type": "payment-card",
+      "type_confidence": 1,
+      "personal": 0.84,
+      "sensitivity": 1.01,
+      "action": "none"
+    },
+    {
+      "column": "payments.iban",
+      "label": {
+        "type": "bank-account",
+        "pii": true,
+        "sensitivity": 3
+      },
+      "type": "bank-account",
+      "type_confidence": 1,
+      "personal": 0.66,
+      "sensitivity": 3,
+      "action": "encrypt + restrict access"
+    },
+    {
+      "column": "payments.amount",
+      "label": {
+        "type": "money-amount",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "money-amount",
+      "type_confidence": 1,
+      "personal": 0.05,
+      "sensitivity": 1,
+      "action": "none"
+    },
+    {
+      "column": "payments.currency",
+      "label": {
+        "type": "category-code",
+        "pii": false,
+        "sensitivity": 0
+      },
+      "type": "category-code",
+      "type_confidence": 1,
+      "personal": 0.02,
+      "sensitivity": 0,
+      "action": "none"
+    },
+    {
+      "column": "payments.client_ip",
+      "label": {
+        "type": "ip-address",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "ip-address",
+      "type_confidence": 1,
+      "personal": 0.66,
+      "sensitivity": 2,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "payments.paid_at",
+      "label": {
+        "type": "timestamp",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "timestamp",
+      "type_confidence": 1,
+      "personal": 0.06,
+      "sensitivity": 1,
+      "action": "none"
+    },
+    {
+      "column": "patients.nhs_number",
+      "label": {
+        "type": "national-id",
+        "pii": true,
+        "sensitivity": 3
+      },
+      "type": "national-id",
+      "type_confidence": 0.86,
+      "personal": 0.94,
+      "sensitivity": 2.83,
+      "action": "encrypt + restrict access"
+    },
+    {
+      "column": "patients.allergies",
+      "label": {
+        "type": "health-info",
+        "pii": true,
+        "sensitivity": 3
+      },
+      "type": "health-info",
+      "type_confidence": 1,
+      "personal": 0.75,
+      "sensitivity": 3,
+      "action": "encrypt + restrict access"
+    },
+    {
+      "column": "patients.visit_reason",
+      "label": {
+        "type": "health-info",
+        "pii": true,
+        "sensitivity": 3
+      },
+      "type": "health-info",
+      "type_confidence": 0.73,
+      "personal": 0.28,
+      "sensitivity": 2.95,
+      "action": "encrypt + restrict access"
+    },
+    {
+      "column": "patients.clinic",
+      "label": {
+        "type": "organization",
+        "pii": false,
+        "sensitivity": 1
+      },
+      "type": "organization",
+      "type_confidence": 1,
+      "personal": 0.23,
+      "sensitivity": 1.39,
+      "action": "none"
+    },
+    {
+      "column": "patients.home_lat_lng",
+      "label": {
+        "type": "geo-coordinates",
+        "pii": true,
+        "sensitivity": 2
+      },
+      "type": "geo-coordinates",
+      "type_confidence": 1,
+      "personal": 0.72,
+      "sensitivity": 2.03,
+      "action": "mask in analytics"
+    },
+    {
+      "column": "patients.website",
+      "label": {
+        "type": "url",
+        "pii": false,
+        "sensitivity": 0
+      },
+      "type": "url",
+      "type_confidence": 1,
+      "personal": 0.17,
+      "sensitivity": 0.27,
+      "action": "none"
+    }
+  ]
+}

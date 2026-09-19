@@ -1,0 +1,240 @@
+{
+  "recipe": "03-file-organizer",
+  "ran_at": "2026-09-19T09:00:31.096Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 24,
+    "input_tokens": 19449,
+    "cost_usd": 0.000817,
+    "median_ms": 366
+  },
+  "metrics": {
+    "category_accuracy": 1,
+    "date_accuracy": 0.9583333333333334,
+    "sent_to_review": 0
+  },
+  "misses": [
+    "vaccination_record.txt: null (expected 2025-10-14)"
+  ],
+  "plan": [
+    {
+      "name": "IMG_4471.txt",
+      "category": "invoices-receipts",
+      "confidence": 1,
+      "date": "2026-02-17",
+      "sensitive": true,
+      "review": false,
+      "target": "invoices-receipts/2026-02-17 - IMG_4471.txt"
+    },
+    {
+      "name": "Untitled.txt",
+      "category": "invoices-receipts",
+      "confidence": 1,
+      "date": "2026-03-12",
+      "sensitive": true,
+      "review": false,
+      "target": "invoices-receipts/2026-03-12 - Untitled.txt"
+    },
+    {
+      "name": "booking.txt",
+      "category": "travel",
+      "confidence": 1,
+      "date": "2026-02-20",
+      "sensitive": false,
+      "review": false,
+      "target": "travel/2026-02-20 - booking.txt"
+    },
+    {
+      "name": "cover_letter.txt",
+      "category": "cv-career",
+      "confidence": 1,
+      "date": "2026-03-09",
+      "sensitive": false,
+      "review": false,
+      "target": "cv-career/2026-03-09 - cover_letter.txt"
+    },
+    {
+      "name": "doc (3).txt",
+      "category": "contracts-legal",
+      "confidence": 1,
+      "date": "2026-01-15",
+      "sensitive": false,
+      "review": false,
+      "target": "contracts-legal/2026-01-15 - doc (3).txt"
+    },
+    {
+      "name": "final report card.txt",
+      "category": "school",
+      "confidence": 1,
+      "date": "2026-03-06",
+      "sensitive": false,
+      "review": false,
+      "target": "school/2026-03-06 - final report card.txt"
+    },
+    {
+      "name": "from_anna.txt",
+      "category": "personal-letters",
+      "confidence": 1,
+      "date": "2026-02-11",
+      "sensitive": false,
+      "review": false,
+      "target": "personal-letters/2026-02-11 - from_anna.txt"
+    },
+    {
+      "name": "grandmas.txt",
+      "category": "recipes",
+      "confidence": 1,
+      "date": null,
+      "sensitive": false,
+      "review": false,
+      "target": "recipes/undated - grandmas.txt"
+    },
+    {
+      "name": "homework_plan.txt",
+      "category": "school",
+      "confidence": 1,
+      "date": null,
+      "sensitive": false,
+      "review": false,
+      "target": "school/undated - homework_plan.txt"
+    },
+    {
+      "name": "itinerary_kyoto.txt",
+      "category": "travel",
+      "confidence": 1,
+      "date": "2026-03-02",
+      "sensitive": false,
+      "review": false,
+      "target": "travel/2026-03-02 - itinerary_kyoto.txt"
+    },
+    {
+      "name": "lease.txt",
+      "category": "contracts-legal",
+      "confidence": 1,
+      "date": "2025-11-30",
+      "sensitive": true,
+      "review": false,
+      "target": "contracts-legal/2025-11-30 - lease.txt"
+    },
+    {
+      "name": "letter_gp.txt",
+      "category": "health",
+      "confidence": 1,
+      "date": "2026-01-28",
+      "sensitive": true,
+      "review": false,
+      "target": "health/2026-01-28 - letter_gp.txt"
+    },
+    {
+      "name": "manual_extract.txt",
+      "category": "manuals",
+      "confidence": 1,
+      "date": null,
+      "sensitive": false,
+      "review": false,
+      "target": "manuals/undated - manual_extract.txt"
+    },
+    {
+      "name": "misc_scan.txt",
+      "category": "other",
+      "confidence": 0.74,
+      "date": null,
+      "sensitive": true,
+      "review": false,
+      "target": "other/undated - misc_scan.txt"
+    },
+    {
+      "name": "notes.txt",
+      "category": "meeting-notes",
+      "confidence": 1,
+      "date": "2026-03-10",
+      "sensitive": false,
+      "review": false,
+      "target": "meeting-notes/2026-03-10 - notes.txt"
+    },
+    {
+      "name": "resume_final_v2.txt",
+      "category": "cv-career",
+      "confidence": 1,
+      "date": "2026-02-01",
+      "sensitive": false,
+      "review": false,
+      "target": "cv-career/2026-02-01 - resume_final_v2.txt"
+    },
+    {
+      "name": "retro.txt",
+      "category": "meeting-notes",
+      "confidence": 1,
+      "date": "2026-02-27",
+      "sensitive": false,
+      "review": false,
+      "target": "meeting-notes/2026-02-27 - retro.txt"
+    },
+    {
+      "name": "router_help.txt",
+      "category": "manuals",
+      "confidence": 1,
+      "date": null,
+      "sensitive": false,
+      "review": false,
+      "target": "manuals/undated - router_help.txt"
+    },
+    {
+      "name": "scan_0012.txt",
+      "category": "invoices-receipts",
+      "confidence": 1,
+      "date": "2026-03-04",
+      "sensitive": false,
+      "review": false,
+      "target": "invoices-receipts/2026-03-04 - scan_0012.txt"
+    },
+    {
+      "name": "soup.txt",
+      "category": "recipes",
+      "confidence": 1,
+      "date": null,
+      "sensitive": false,
+      "review": false,
+      "target": "recipes/undated - soup.txt"
+    },
+    {
+      "name": "statement_feb.txt",
+      "category": "bank-tax",
+      "confidence": 1,
+      "date": "2026-03-01",
+      "sensitive": true,
+      "review": false,
+      "target": "bank-tax/2026-03-01 - statement_feb.txt"
+    },
+    {
+      "name": "tax_summary_2025.txt",
+      "category": "bank-tax",
+      "confidence": 1,
+      "date": "2026-01-31",
+      "sensitive": true,
+      "review": false,
+      "target": "bank-tax/2026-01-31 - tax_summary_2025.txt"
+    },
+    {
+      "name": "vaccination_record.txt",
+      "category": "health",
+      "confidence": 1,
+      "date": null,
+      "sensitive": true,
+      "review": false,
+      "target": "health/undated - vaccination_record.txt"
+    },
+    {
+      "name": "wedding_invite.txt",
+      "category": "personal-letters",
+      "confidence": 1,
+      "date": "2026-01-05",
+      "sensitive": false,
+      "review": false,
+      "target": "personal-letters/2026-01-05 - wedding_invite.txt"
+    }
+  ]
+}

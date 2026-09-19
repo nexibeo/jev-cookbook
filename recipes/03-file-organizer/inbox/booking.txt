@@ -1,0 +1,6 @@
+Your trip is confirmed!
+Booking reference: QX7P2L    Booked on: 20 February 2026
+Flight: Amsterdam (AMS) -> Lisbon (LIS), 12 April 2026, 07:25 - 09:50
+Return: Lisbon (LIS) -> Amsterdam (AMS), 19 April 2026, 18:10 - 22:15
+Passenger: Tom Visser
+Hotel: Casa do Rio, Lisbon, check-in 12 April, check-out 19 April (7 nights)

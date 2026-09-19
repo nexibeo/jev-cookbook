@@ -1,0 +1,572 @@
+{
+  "recipe": "04-multi-label-tagging",
+  "ran_at": "2026-09-19T09:00:32.633Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 24,
+    "input_tokens": 19310,
+    "cost_usd": 0.000811,
+    "median_ms": 383
+  },
+  "metrics": {
+    "sweep": {
+      "0.3": {
+        "precision": 0.8,
+        "recall": 0.9361702127659575,
+        "f1": 0.8627450980392157
+      },
+      "0.5": {
+        "precision": 0.8888888888888888,
+        "recall": 0.851063829787234,
+        "f1": 0.8695652173913044
+      },
+      "0.7": {
+        "precision": 0.9,
+        "recall": 0.7659574468085106,
+        "f1": 0.8275862068965516
+      },
+      "0.9": {
+        "precision": 0.967741935483871,
+        "recall": 0.6382978723404256,
+        "f1": 0.7692307692307693
+      }
+    },
+    "top_k": {
+      "precision": 0.9148936170212766,
+      "recall": 0.9148936170212766,
+      "f1": 0.9148936170212766
+    }
+  },
+  "results": [
+    {
+      "id": "A01",
+      "expected": [
+        "cloud",
+        "cost-saving",
+        "devops"
+      ],
+      "nouls": {
+        "programming": 0.18,
+        "databases": 0.02,
+        "cloud": 0.99,
+        "devops": 0.84,
+        "cost-saving": 0.97,
+        "startups": 0.02,
+        "management": 0.02,
+        "careers": 0.01,
+        "workplace": 0.02,
+        "health": 0,
+        "cooking": 0,
+        "travel": 0.01,
+        "beginner": 0.08
+      }
+    },
+    {
+      "id": "A02",
+      "expected": [
+        "cooking",
+        "beginner"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.02,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0.01,
+        "cooking": 0.86,
+        "travel": 0.01,
+        "beginner": 0.94
+      }
+    },
+    {
+      "id": "A03",
+      "expected": [
+        "health",
+        "workplace"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0,
+        "devops": 0,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.97,
+        "health": 0.98,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.47
+      }
+    },
+    {
+      "id": "A04",
+      "expected": [
+        "databases",
+        "startups"
+      ],
+      "nouls": {
+        "programming": 0.13,
+        "databases": 0.99,
+        "cloud": 0.14,
+        "devops": 0.89,
+        "cost-saving": 0.09,
+        "startups": 0.26,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.02,
+        "health": 0,
+        "cooking": 0,
+        "travel": 0,
+        "beginner": 0.08
+      }
+    },
+    {
+      "id": "A05",
+      "expected": [
+        "travel",
+        "cost-saving"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0,
+        "devops": 0.01,
+        "cost-saving": 0.95,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0.91,
+        "beginner": 0.34
+      }
+    },
+    {
+      "id": "A06",
+      "expected": [
+        "management",
+        "workplace"
+      ],
+      "nouls": {
+        "programming": 0.04,
+        "databases": 0.01,
+        "cloud": 0.02,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.06,
+        "management": 0.97,
+        "careers": 0.02,
+        "workplace": 0.57,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0,
+        "beginner": 0.14
+      }
+    },
+    {
+      "id": "A07",
+      "expected": [
+        "programming",
+        "beginner"
+      ],
+      "nouls": {
+        "programming": 0.95,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.02,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.41
+      }
+    },
+    {
+      "id": "A08",
+      "expected": [
+        "careers",
+        "beginner"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.02,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.98,
+        "workplace": 0.81,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0.01,
+        "beginner": 0.56
+      }
+    },
+    {
+      "id": "A09",
+      "expected": [
+        "databases",
+        "devops"
+      ],
+      "nouls": {
+        "programming": 0.43,
+        "databases": 0.99,
+        "cloud": 0.07,
+        "devops": 0.86,
+        "cost-saving": 0.02,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0,
+        "cooking": 0,
+        "travel": 0,
+        "beginner": 0.07
+      }
+    },
+    {
+      "id": "A10",
+      "expected": [
+        "cooking",
+        "cost-saving"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0,
+        "devops": 0.01,
+        "cost-saving": 0.58,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.04,
+        "health": 0.06,
+        "cooking": 0.98,
+        "travel": 0.01,
+        "beginner": 0.25
+      }
+    },
+    {
+      "id": "A11",
+      "expected": [
+        "management"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.04,
+        "management": 0.98,
+        "careers": 0.02,
+        "workplace": 0.97,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0,
+        "beginner": 0.25
+      }
+    },
+    {
+      "id": "A12",
+      "expected": [
+        "health",
+        "beginner"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0.99,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.64
+      }
+    },
+    {
+      "id": "A13",
+      "expected": [
+        "cloud",
+        "devops",
+        "cost-saving"
+      ],
+      "nouls": {
+        "programming": 0.09,
+        "databases": 0.01,
+        "cloud": 0.98,
+        "devops": 0.96,
+        "cost-saving": 0.34,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0.01,
+        "beginner": 0.08
+      }
+    },
+    {
+      "id": "A14",
+      "expected": [
+        "startups"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.02,
+        "startups": 0.97,
+        "management": 0.03,
+        "careers": 0.01,
+        "workplace": 0.02,
+        "health": 0,
+        "cooking": 0.01,
+        "travel": 0,
+        "beginner": 0.18
+      }
+    },
+    {
+      "id": "A15",
+      "expected": [
+        "databases",
+        "programming"
+      ],
+      "nouls": {
+        "programming": 0.25,
+        "databases": 0.99,
+        "cloud": 0.01,
+        "devops": 0.07,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0,
+        "cooking": 0,
+        "travel": 0.01,
+        "beginner": 0.09
+      }
+    },
+    {
+      "id": "A16",
+      "expected": [
+        "travel",
+        "workplace"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.04,
+        "startups": 0.01,
+        "management": 0.02,
+        "careers": 0.03,
+        "workplace": 0.97,
+        "health": 0.02,
+        "cooking": 0.01,
+        "travel": 0.7,
+        "beginner": 0.35
+      }
+    },
+    {
+      "id": "A17",
+      "expected": [
+        "careers"
+      ],
+      "nouls": {
+        "programming": 0.03,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.02,
+        "careers": 0.98,
+        "workplace": 0.16,
+        "health": 0.01,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.52
+      }
+    },
+    {
+      "id": "A18",
+      "expected": [
+        "programming",
+        "beginner"
+      ],
+      "nouls": {
+        "programming": 0.98,
+        "databases": 0.02,
+        "cloud": 0.02,
+        "devops": 0.02,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.73
+      }
+    },
+    {
+      "id": "A19",
+      "expected": [
+        "health",
+        "workplace"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.04,
+        "careers": 0.01,
+        "workplace": 0.97,
+        "health": 0.73,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.18
+      }
+    },
+    {
+      "id": "A20",
+      "expected": [
+        "startups",
+        "management"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0.01,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.02,
+        "startups": 0.97,
+        "management": 0.92,
+        "careers": 0.02,
+        "workplace": 0.36,
+        "health": 0.01,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.4
+      }
+    },
+    {
+      "id": "A21",
+      "expected": [
+        "cloud",
+        "devops"
+      ],
+      "nouls": {
+        "programming": 0.88,
+        "databases": 0.02,
+        "cloud": 0.99,
+        "devops": 0.43,
+        "cost-saving": 0.03,
+        "startups": 0.02,
+        "management": 0.08,
+        "careers": 0.01,
+        "workplace": 0.02,
+        "health": 0.01,
+        "cooking": 0.01,
+        "travel": 0.01,
+        "beginner": 0.11
+      }
+    },
+    {
+      "id": "A22",
+      "expected": [
+        "cooking"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0,
+        "devops": 0.01,
+        "cost-saving": 0.03,
+        "startups": 0,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0.01,
+        "cooking": 0.99,
+        "travel": 0.01,
+        "beginner": 0.23
+      }
+    },
+    {
+      "id": "A23",
+      "expected": [
+        "careers",
+        "workplace"
+      ],
+      "nouls": {
+        "programming": 0.01,
+        "databases": 0,
+        "cloud": 0.01,
+        "devops": 0.01,
+        "cost-saving": 0.01,
+        "startups": 0.01,
+        "management": 0.03,
+        "careers": 0.98,
+        "workplace": 0.96,
+        "health": 0.01,
+        "cooking": 0,
+        "travel": 0,
+        "beginner": 0.23
+      }
+    },
+    {
+      "id": "A24",
+      "expected": [
+        "databases",
+        "cloud",
+        "cost-saving"
+      ],
+      "nouls": {
+        "programming": 0.06,
+        "databases": 0.97,
+        "cloud": 0.4,
+        "devops": 0.18,
+        "cost-saving": 0.16,
+        "startups": 0.02,
+        "management": 0.01,
+        "careers": 0.01,
+        "workplace": 0.01,
+        "health": 0,
+        "cooking": 0,
+        "travel": 0.01,
+        "beginner": 0.11
+      }
+    }
+  ]
+}

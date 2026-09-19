@@ -1,0 +1,238 @@
+{
+  "recipe": "14-browser-agent",
+  "ran_at": "2026-09-19T08:59:57.846Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [],
+  "usage": {
+    "jev_steps": 18,
+    "cost_usd": 0.00945,
+    "note": "cost includes the text model used for typing"
+  },
+  "metrics": {
+    "passed": "5/6"
+  },
+  "results": [
+    {
+      "name": "Follow links: Coffee to Ristretto",
+      "passed": true,
+      "status": "done",
+      "final_url": "https://en.wikipedia.org/wiki/Ristretto",
+      "steps": 3,
+      "ms": 4604,
+      "cost_usd": 0.002474,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 590,
+          "proposed": "click_e62",
+          "confidence": 0.97,
+          "goal_done": 0.02,
+          "stuck": 0.82,
+          "executed": "clicked a \"espresso\" -> /wiki/Espresso"
+        },
+        {
+          "step": 2,
+          "ms": 589,
+          "proposed": "click_e212",
+          "confidence": 0.98,
+          "goal_done": 0.04,
+          "stuck": 0.36,
+          "executed": "clicked a \"Ristretto\" -> /wiki/Ristretto (context: See also: Doppio, , and Lungo)"
+        },
+        {
+          "step": 3,
+          "ms": 554,
+          "proposed": "done",
+          "confidence": 1,
+          "goal_done": 0.98,
+          "stuck": 0.07
+        }
+      ]
+    },
+    {
+      "name": "Search and open an article",
+      "passed": true,
+      "status": "done",
+      "final_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+      "steps": 3,
+      "ms": 4572,
+      "cost_usd": 0.002983,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 652,
+          "proposed": "type_e2",
+          "confidence": 0.98,
+          "goal_done": 0.01,
+          "stuck": 0.88,
+          "executed": "typed \"G\u00f6del's incompleteness theorems\" into input search \"Search Wikipedia\" value=\"\""
+        },
+        {
+          "step": 2,
+          "ms": 540,
+          "proposed": "click_e4",
+          "confidence": 0.63,
+          "goal_done": 0.05,
+          "stuck": 0.15,
+          "executed": "clicked a \"G\u00f6del's incompleteness theorems Limitative results in mathematical logic\" -> /w/index.php (context: Search for pages containing G\u00f6del's incompleteness theorems Search)"
+        },
+        {
+          "step": 3,
+          "ms": 533,
+          "proposed": "done",
+          "confidence": 0.99,
+          "goal_done": 0.98,
+          "stuck": 0.06
+        }
+      ]
+    },
+    {
+      "name": "Fill a form without submitting",
+      "passed": true,
+      "status": "done",
+      "final_url": "https://httpbin.org/forms/post",
+      "steps": 5,
+      "ms": 4881,
+      "cost_usd": 0.000513,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 285,
+          "proposed": "click_e6",
+          "confidence": 1,
+          "goal_done": 0.04,
+          "stuck": 0.79,
+          "executed": "clicked input radio \"Large\" [not checked] (context: Customer name: Telephone: E-mail address: Pizza Size Small Medium  Pizza Toppings Bacon Extra Cheese Onion Mushroom Preferred delivery time: Delivery instructio)"
+        },
+        {
+          "step": 2,
+          "ms": 328,
+          "proposed": "click_e7",
+          "confidence": 0.94,
+          "goal_done": 0.08,
+          "stuck": 0.48,
+          "executed": "clicked input checkbox \"Bacon\" [not checked] (context: Customer name: Telephone: E-mail address: Pizza Size Small Medium Large Pizza Toppings  Extra Cheese Onion Mushroom Preferred delivery time: Delivery instructio)"
+        },
+        {
+          "step": 3,
+          "ms": 335,
+          "proposed": "click_e9",
+          "confidence": 0.81,
+          "goal_done": 0.09,
+          "stuck": 0.54,
+          "executed": "clicked input checkbox \"Onion\" [not checked] (context: Customer name: Telephone: E-mail address: Pizza Size Small Medium Large Pizza Toppings Bacon Extra Cheese  Mushroom Preferred delivery time: Delivery instructio)"
+        },
+        {
+          "step": 4,
+          "ms": 435,
+          "proposed": "type_e11",
+          "confidence": 0.97,
+          "goal_done": 0.22,
+          "stuck": 0.5,
+          "executed": "typed \"19:30\" into input time \"Preferred delivery time:\" value=\"\" (context: Customer name: Telephone: E-mail address: Pizza Size Small Medium Large Pizza Toppings Bacon Extra Cheese Onion Mushroom  Delivery instructions: Submit order)"
+        },
+        {
+          "step": 5,
+          "ms": 348,
+          "proposed": "done",
+          "confidence": 0.98,
+          "goal_done": 0.87,
+          "stuck": 0.34
+        }
+      ]
+    },
+    {
+      "name": "Site search: exact template name",
+      "passed": false,
+      "status": "done",
+      "final_url": "https://templatesgrokbot.com/bot/cold-outreach",
+      "steps": 2,
+      "ms": 3173,
+      "cost_usd": 0.000959,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 471,
+          "proposed": "click_e47",
+          "confidence": 0.96,
+          "goal_done": 0.08,
+          "stuck": 0.8,
+          "executed": "clicked a \"Cold Outreach\" -> /bot/cold-outreach (context: GT-94273  by TemplatesGrokBot Researches a prospect properly, then writes an opener that proves you did. email prospecting sales MARKETING 229)"
+        },
+        {
+          "step": 2,
+          "ms": 360,
+          "proposed": "done",
+          "confidence": 0.97,
+          "goal_done": 0.9,
+          "stuck": 0.16
+        }
+      ]
+    },
+    {
+      "name": "Site search: a need, not a name",
+      "passed": true,
+      "status": "done",
+      "final_url": "https://templatesgrokbot.com/bot/cold-outreach",
+      "steps": 2,
+      "ms": 3472,
+      "cost_usd": 0.00096,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 520,
+          "proposed": "click_e47",
+          "confidence": 0.97,
+          "goal_done": 0.24,
+          "stuck": 0.78,
+          "executed": "clicked a \"Cold Outreach\" -> /bot/cold-outreach (context: GT-94273  by TemplatesGrokBot Researches a prospect properly, then writes an opener that proves you did. email prospecting sales MARKETING 229)"
+        },
+        {
+          "step": 2,
+          "ms": 768,
+          "proposed": "done",
+          "confidence": 0.97,
+          "goal_done": 0.93,
+          "stuck": 0.1
+        }
+      ]
+    },
+    {
+      "name": "Jobs page to a template",
+      "passed": true,
+      "status": "done",
+      "final_url": "https://templatesgrokbot.com/bot/workorai",
+      "steps": 3,
+      "ms": 4069,
+      "cost_usd": 0.001561,
+      "trace": [
+        {
+          "step": 1,
+          "ms": 453,
+          "proposed": "click_e30",
+          "confidence": 0.87,
+          "goal_done": 0.13,
+          "stuck": 0.76,
+          "executed": "clicked a \"Human Resources 65\" -> /jobs/human-resources (context: Creatives 368 Customer Support 109 Education 93 Executives and Strategy 169 Finance 127 Government 97 Healthcare 51 Hospitality and Events 66  Insurance 58 IT a)"
+        },
+        {
+          "step": 2,
+          "ms": 468,
+          "proposed": "click_e60",
+          "confidence": 0.53,
+          "goal_done": 0.19,
+          "stuck": 0.16,
+          "executed": "clicked a \"Workorai\" -> /bot/workorai (context: GT-18215  by TemplatesGrokBot Matches candidates to jobs and employers to candidates with transparent explanations. candidate matching hiring job search OPERATI)"
+        },
+        {
+          "step": 3,
+          "ms": 477,
+          "proposed": "done",
+          "confidence": 0.96,
+          "goal_done": 0.85,
+          "stuck": 0.07
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "recipe": "09-extract-by-picking",
+  "ran_at": "2026-09-19T09:00:46.722Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 10,
+    "input_tokens": 11976,
+    "cost_usd": 0.000503,
+    "median_ms": 451
+  },
+  "metrics": {
+    "field_accuracy": 1,
+    "per_field": {
+      "invoice_number": 1,
+      "invoice_date": 1,
+      "due_date": 1,
+      "total": 1
+    }
+  },
+  "results": [
+    {
+      "id": "I01",
+      "label": {
+        "invoice_number": "INV-2026-0311",
+        "invoice_date": "2026-03-04",
+        "due_date": "2026-04-03",
+        "total": "720.00"
+      },
+      "got": {
+        "invoice_number": "INV-2026-0311",
+        "invoice_date": "2026-03-04",
+        "due_date": "2026-04-03",
+        "total": "720.00"
+      },
+      "is_invoice": 0.99,
+      "candidates": {
+        "date": 2,
+        "amount": 4,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I02",
+      "label": {
+        "invoice_number": "48213",
+        "invoice_date": "2026-02-10",
+        "due_date": "2026-03-12",
+        "total": "158.98"
+      },
+      "got": {
+        "invoice_number": "48213",
+        "invoice_date": "2026-02-10",
+        "due_date": "2026-03-12",
+        "total": "158.98"
+      },
+      "is_invoice": 0.99,
+      "candidates": {
+        "date": 2,
+        "amount": 5,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I03",
+      "label": {
+        "invoice_number": "RE-7741/26",
+        "invoice_date": "2026-01-15",
+        "due_date": "2026-01-29",
+        "total": "904.40"
+      },
+      "got": {
+        "invoice_number": "RE-7741/26",
+        "invoice_date": "2026-01-15",
+        "due_date": "2026-01-29",
+        "total": "904.40"
+      },
+      "is_invoice": 0.98,
+      "candidates": {
+        "date": 2,
+        "amount": 4,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I04",
+      "label": {
+        "invoice_number": "CC-2026-02-99812",
+        "invoice_date": "2026-03-01",
+        "due_date": "2026-03-31",
+        "total": "1192.20"
+      },
+      "got": {
+        "invoice_number": "CC-2026-02-99812",
+        "invoice_date": "2026-03-01",
+        "due_date": "2026-03-31",
+        "total": "1192.20"
+      },
+      "is_invoice": 0.98,
+      "candidates": {
+        "date": 3,
+        "amount": 4,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I05",
+      "label": {
+        "invoice_number": "5531",
+        "invoice_date": "2026-03-12",
+        "due_date": null,
+        "total": "196.88"
+      },
+      "got": {
+        "invoice_number": "5531",
+        "invoice_date": "2026-03-12",
+        "due_date": null,
+        "total": "196.88"
+      },
+      "is_invoice": 0.99,
+      "candidates": {
+        "date": 1,
+        "amount": 4,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I06",
+      "label": {
+        "invoice_number": "ML-014",
+        "invoice_date": "2026-02-28",
+        "due_date": "2026-03-14",
+        "total": "5400.00"
+      },
+      "got": {
+        "invoice_number": "ML-014",
+        "invoice_date": "2026-02-28",
+        "due_date": "2026-03-14",
+        "total": "5400.00"
+      },
+      "is_invoice": 0.99,
+      "candidates": {
+        "date": 2,
+        "amount": 2,
+        "reference": 2
+      }
+    },
+    {
+      "id": "I07",
+      "label": {
+        "invoice_number": "RDC-0120-88",
+        "invoice_date": "2026-01-20",
+        "due_date": "2026-02-20",
+        "total": "120.00"
+      },
+      "got": {
+        "invoice_number": "RDC-0120-88",
+        "invoice_date": "2026-01-20",
+        "due_date": "2026-02-20",
+        "total": "120.00"
+      },
+      "is_invoice": 0.97,
+      "candidates": {
+        "date": 3,
+        "amount": 2,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I08",
+      "label": {
+        "invoice_number": "2026/045",
+        "invoice_date": "2026-02-09",
+        "due_date": "2026-03-11",
+        "total": "1464.00"
+      },
+      "got": {
+        "invoice_number": "2026/045",
+        "invoice_date": "2026-02-09",
+        "due_date": "2026-03-11",
+        "total": "1464.00"
+      },
+      "is_invoice": 0.98,
+      "candidates": {
+        "date": 2,
+        "amount": 3,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I09",
+      "label": {
+        "invoice_number": "SF-99102",
+        "invoice_date": "2026-03-01",
+        "due_date": "2026-04-01",
+        "total": "486.00"
+      },
+      "got": {
+        "invoice_number": "SF-99102",
+        "invoice_date": "2026-03-01",
+        "due_date": "2026-04-01",
+        "total": "486.00"
+      },
+      "is_invoice": 0.93,
+      "candidates": {
+        "date": 4,
+        "amount": 3,
+        "reference": 1
+      }
+    },
+    {
+      "id": "I10",
+      "label": {
+        "invoice_number": null,
+        "invoice_date": null,
+        "due_date": null,
+        "total": null,
+        "note": "a quote, not an invoice: every field should be 'none'"
+      },
+      "got": {
+        "invoice_number": null,
+        "invoice_date": null,
+        "due_date": null,
+        "total": null
+      },
+      "is_invoice": 0.02,
+      "candidates": {
+        "date": 2,
+        "amount": 3,
+        "reference": 1
+      }
+    }
+  ]
+}

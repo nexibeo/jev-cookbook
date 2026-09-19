@@ -1,0 +1,5 @@
+Adult vaccination record
+Name: Tom Visser    Date of birth: 02/07/1988
+Influenza vaccine: 14 October 2025, batch FL-2291, left arm
+Tetanus/diphtheria booster: 3 June 2019
+Next flu vaccine due: autumn 2026

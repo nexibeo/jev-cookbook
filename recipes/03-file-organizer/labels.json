@@ -1,0 +1,98 @@
+{
+ "scan_0012.txt": {
+  "category": "invoices-receipts",
+  "date": "2026-03-04"
+ },
+ "IMG_4471.txt": {
+  "category": "invoices-receipts",
+  "date": "2026-02-17"
+ },
+ "doc (3).txt": {
+  "category": "contracts-legal",
+  "date": "2026-01-15"
+ },
+ "notes.txt": {
+  "category": "meeting-notes",
+  "date": "2026-03-10"
+ },
+ "resume_final_v2.txt": {
+  "category": "cv-career",
+  "date": "2026-02-01"
+ },
+ "grandmas.txt": {
+  "category": "recipes",
+  "date": null
+ },
+ "booking.txt": {
+  "category": "travel",
+  "date": "2026-02-20"
+ },
+ "letter_gp.txt": {
+  "category": "health",
+  "date": "2026-01-28"
+ },
+ "manual_extract.txt": {
+  "category": "manuals",
+  "date": null
+ },
+ "statement_feb.txt": {
+  "category": "bank-tax",
+  "date": "2026-03-01"
+ },
+ "final report card.txt": {
+  "category": "school",
+  "date": "2026-03-06"
+ },
+ "from_anna.txt": {
+  "category": "personal-letters",
+  "date": "2026-02-11"
+ },
+ "Untitled.txt": {
+  "category": "invoices-receipts",
+  "date": "2026-03-12"
+ },
+ "lease.txt": {
+  "category": "contracts-legal",
+  "date": "2025-11-30"
+ },
+ "retro.txt": {
+  "category": "meeting-notes",
+  "date": "2026-02-27"
+ },
+ "cover_letter.txt": {
+  "category": "cv-career",
+  "date": "2026-03-09"
+ },
+ "soup.txt": {
+  "category": "recipes",
+  "date": null
+ },
+ "itinerary_kyoto.txt": {
+  "category": "travel",
+  "date": "2026-03-02"
+ },
+ "vaccination_record.txt": {
+  "category": "health",
+  "date": "2025-10-14"
+ },
+ "router_help.txt": {
+  "category": "manuals",
+  "date": null
+ },
+ "tax_summary_2025.txt": {
+  "category": "bank-tax",
+  "date": "2026-01-31"
+ },
+ "homework_plan.txt": {
+  "category": "school",
+  "date": null
+ },
+ "wedding_invite.txt": {
+  "category": "personal-letters",
+  "date": "2026-01-05"
+ },
+ "misc_scan.txt": {
+  "category": "other",
+  "date": null
+ }
+}
