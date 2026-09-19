@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Jev Cookbook</title>
+  <desc id="d">15 tested recipes for TypeSafe's Jev decision model on OpenRouter. One real Jev call turns a support message into typed answers: team billing at 1.00, refund requested at 0.99, frustration 0.97 on a 0 to 2 scale, in 364 ms for $0.000024.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#172340"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a5b4fc"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .chip rect { fill: #1e2b4a; stroke: #2f3f66; }
+      .chip text { fill: #cbd5e1; font-size: 14px; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <circle cx="1180" cy="-40" r="220" fill="#14b8a6" opacity="0.06"/>
+  <circle cx="660" cy="470" r="200" fill="#6366f1" opacity="0.07"/>
+
+  <!-- Title block -->
+  <text x="64" y="88" class="sans" font-size="15" font-weight="600" letter-spacing="2.5" fill="#5eead4">TYPESAFE · JEV · OPENROUTER</text>
+  <text x="62" y="158" class="sans" font-size="66" font-weight="800" fill="#ffffff">Jev Cookbook</text>
+  <text x="64" y="202" class="sans" font-size="23" fill="#cbd5e1">15 tested recipes: typed decisions, not generated text</text>
+
+  <g class="sans" font-size="15" font-weight="600">
+    <rect x="64" y="228" width="150" height="36" rx="18" fill="#14b8a6" opacity="0.16"/>
+    <text x="139" y="251.5" text-anchor="middle" fill="#5eead4">~0.4 s per call</text>
+    <rect x="226" y="228" width="196" height="36" rx="18" fill="#6366f1" opacity="0.2"/>
+    <text x="324" y="251.5" text-anchor="middle" fill="#c7d2fe">2–8¢ per 1,000 items</text>
+    <rect x="434" y="228" width="222" height="36" rx="18" fill="#f59e0b" opacity="0.16"/>
+    <text x="545" y="251.5" text-anchor="middle" fill="#fcd34d">measured on sample data</text>
+  </g>
+
+  <!-- One Jev call -->
+  <g class="sans">
+    <rect x="752" y="44" width="464" height="252" rx="16" fill="#0e1830" stroke="#2f3f66"/>
+    <text x="776" y="74" font-size="12.5" font-weight="700" letter-spacing="2" fill="#5eead4">ONE JEV CALL</text>
+    <text x="1192" y="74" font-size="12.5" text-anchor="end" fill="#64748b">364 ms · $0.000024</text>
+    <text x="776" y="102" class="mono" font-size="14" fill="#94a3b8">state</text>
+    <text x="836" y="102" class="mono" font-size="14" fill="#e2e8f0">"I was charged twice for</text>
+    <text x="836" y="121" class="mono" font-size="14" fill="#e2e8f0"> March. Please refund it."</text>
+    <line x1="776" y1="138" x2="1192" y2="138" stroke="#2f3f66"/>
+
+    <text x="776" y="168" font-size="16" font-weight="600" fill="#ffffff">team</text>
+    <text x="776" y="186" font-size="12" fill="#64748b">Choice</text>
+    <text x="900" y="168" font-size="14" fill="#cbd5e1">billing</text>
+    <rect x="960" y="157" width="180" height="12" rx="6" fill="#1e2b4a"/>
+    <rect x="960" y="157" width="180" height="12" rx="6" fill="url(#teal)"/>
+    <text x="1192" y="168" font-size="14" font-weight="700" text-anchor="end" fill="#5eead4">1.00</text>
+
+    <text x="776" y="216" font-size="16" font-weight="600" fill="#ffffff">refund?</text>
+    <text x="776" y="234" font-size="12" fill="#64748b">Noul</text>
+    <text x="900" y="216" font-size="14" fill="#cbd5e1">yes</text>
+    <rect x="960" y="205" width="180" height="12" rx="6" fill="#1e2b4a"/>
+    <rect x="960" y="205" width="178" height="12" rx="6" fill="url(#indigo)"/>
+    <text x="1192" y="216" font-size="14" font-weight="700" text-anchor="end" fill="#a5b4fc">0.99</text>
+
+    <text x="776" y="264" font-size="16" font-weight="600" fill="#ffffff">frustration</text>
+    <text x="776" y="282" font-size="12" fill="#64748b">Score</text>
+    <line x1="966" y1="258" x2="1134" y2="258" stroke="#2f3f66" stroke-width="2"/>
+    <circle cx="966" cy="258" r="6" fill="#1e2b4a" stroke="#475569"/>
+    <circle cx="1047" cy="258" r="9" fill="#f59e0b"/>
+    <circle cx="1134" cy="258" r="6" fill="#1e2b4a" stroke="#475569"/>
+    <text x="966" y="283" font-size="11.5" text-anchor="middle" fill="#64748b">calm</text>
+    <text x="1050" y="283" font-size="11.5" text-anchor="middle" fill="#fcd34d">annoyed</text>
+    <text x="1134" y="283" font-size="11.5" text-anchor="middle" fill="#64748b">angry</text>
+    <text x="1192" y="264" font-size="14" font-weight="700" text-anchor="end" fill="#fcd34d">0.97</text>
+  </g>
+
+  <!-- The recipes -->
+  <g class="sans chip">
+    <rect x="64" y="318" width="130" height="32" rx="16"/><text x="129" y="339" text-anchor="middle">Support triage</text>
+    <rect x="204" y="318" width="153" height="32" rx="16"/><text x="280.5" y="339" text-anchor="middle">Database indexing</text>
+    <rect x="367" y="318" width="130" height="32" rx="16"/><text x="432" y="339" text-anchor="middle">File organizer</text>
+    <rect x="507" y="318" width="84" height="32" rx="16"/><text x="549" y="339" text-anchor="middle">Tagging</text>
+    <rect x="601" y="318" width="136" height="32" rx="16"/><text x="669" y="339" text-anchor="middle">Category trees</text>
+    <rect x="747" y="318" width="80" height="32" rx="16"/><text x="787" y="339" text-anchor="middle">Dedupe</text>
+    <rect x="837" y="318" width="112" height="32" rx="16"/><text x="893" y="339" text-anchor="middle">PII scanner</text>
+    <rect x="959" y="318" width="156" height="32" rx="16"/><text x="1037" y="339" text-anchor="middle">Bank transactions</text>
+
+    <rect x="64" y="360" width="160" height="32" rx="16"/><text x="144" y="381" text-anchor="middle">Invoice extraction</text>
+    <rect x="234" y="360" width="156" height="32" rx="16"/><text x="312" y="381" text-anchor="middle">Search re-ranking</text>
+    <rect x="400" y="360" width="100" height="32" rx="16"/><text x="450" y="381" text-anchor="middle">Log triage</text>
+    <rect x="510" y="360" width="110" height="32" rx="16"/><text x="565" y="381" text-anchor="middle">Moderation</text>
+    <rect x="630" y="360" width="118" height="32" rx="16"/><text x="689" y="381" text-anchor="middle">Lead scoring</text>
+    <rect x="758" y="360" width="126" height="32" rx="16"/><text x="821" y="381" text-anchor="middle">Browser agent</text>
+    <rect x="894" y="360" width="126" height="32" rx="16" style="fill:#14b8a6;fill-opacity:0.18;stroke:#14b8a6"/><text x="957" y="381" text-anchor="middle" style="fill:#5eead4">Gmail labeler</text>
+  </g>
+</svg>

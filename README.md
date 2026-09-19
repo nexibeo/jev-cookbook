@@ -1,5 +1,7 @@
 # Jev Cookbook
 
+<p align="center"><img src="assets/banner.svg" alt="Jev Cookbook: 15 tested recipes. One real Jev call turns a support message into typed answers: team billing 1.00, refund 0.99, frustration 0.97, in 364 ms for $0.000024." width="100%"></p>
+
 **Practical, tested recipes for [TypeSafe's Jev](https://docs.typesafe.ai/introduction), the fast decision model on [OpenRouter](https://openrouter.ai/typesafe/jev-1.13).** Fifteen real-world jobs, each with a runnable script, a small labelled dataset and measured results: support triage, database indexing, a file organizer, tagging, category trees, duplicate detection, PII scanning, bank transactions, invoice extraction, search, log triage, moderation, lead scoring, a browser agent and a Gmail labeler that connects to your own inbox.
 
 Created by **Jeroen Erne** ([nexibeo.com](https://nexibeo.com) · [completeaitraining.com](https://completeaitraining.com)), built together with Claude.
@@ -81,6 +83,8 @@ Also here: [`examples/quickstart.mjs`](examples/quickstart.mjs), a shared client
 ## How every recipe works
 
 The pattern is the same everywhere: **your code prepares the data and owns every decision; Jev answers narrow questions.**
+
+<p align="center"><img src="assets/how-it-works.svg" alt="How every recipe works: 1, your data becomes the state; 2, you ask Choice, Noul and Score questions in one call; 3, Jev returns typed answers with probabilities in about 0.4 seconds; 4, your code decides to act, review or hold." width="100%"></p>
 
 1. **Build the state:** the few fields a person would need to judge the item, as JSON. Trim everything else.
 2. **Ask everything in one call:** a Choice for one-answer decisions, one Noul per label for multi-label ones, a Score for anything ordered. Questions run in parallel, so ten more cost almost nothing.
