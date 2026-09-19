@@ -5,7 +5,7 @@
   "description": "Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter.",
   "type": "module",
   "license": "MIT",
-  "author": "Jeroen Erne (https://nexibeo.com)",
+  "author": "Jeroen Erne (https://www.linkedin.com/in/jeroenerne/)",
   "engines": { "node": ">=22.9" },
   "scripts": {
     "quickstart": "node --env-file-if-exists=.env examples/quickstart.mjs",

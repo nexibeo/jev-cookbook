@@ -4,7 +4,7 @@
 
 **Practical, tested recipes for [TypeSafe's Jev](https://docs.typesafe.ai/introduction), the fast decision model on [OpenRouter](https://openrouter.ai/typesafe/jev-1.13).** Fifteen real-world jobs, each with a runnable script, a small labelled dataset and measured results: support triage, database indexing, a file organizer, tagging, category trees, duplicate detection, PII scanning, bank transactions, invoice extraction, search, log triage, moderation, lead scoring, a browser agent and a Gmail labeler that connects to your own inbox.
 
-Created by **Jeroen Erne** ([nexibeo.com](https://nexibeo.com) · [completeaitraining.com](https://completeaitraining.com)), built together with Claude.
+Created by **[Jeroen Erne](https://www.linkedin.com/in/jeroenerne/)** ([nexibeo.com](https://nexibeo.com) · [completeaitraining.com](https://completeaitraining.com)), built together with Claude.
 
 ## What Jev is, in 30 seconds
 
@@ -149,6 +149,6 @@ docs/case-study-templatesgrokbot.md
 
 ## Credits
 
-Created by **Jeroen Erne**, of [Nexibeo](https://nexibeo.com) and [Complete AI Training](https://completeaitraining.com), built together with Claude. The case study comes from [TemplatesGrokBot](https://templatesgrokbot.com). Jev is made by [TypeSafe](https://typesafe.ai); this project is independent of TypeSafe and OpenRouter.
+Created by **[Jeroen Erne](https://www.linkedin.com/in/jeroenerne/)**, of [Nexibeo](https://nexibeo.com) and [Complete AI Training](https://completeaitraining.com), built together with Claude. The case study comes from [TemplatesGrokBot](https://templatesgrokbot.com). Jev is made by [TypeSafe](https://typesafe.ai); this project is independent of TypeSafe and OpenRouter.
 
 MIT licensed: see [LICENSE](LICENSE). Contributions and new recipes are welcome.
