@@ -1,6 +1,6 @@
 # Jev Cookbook
 
-**Practical, tested recipes for [TypeSafe's Jev](https://docs.typesafe.ai/introduction), the fast decision model on [OpenRouter](https://openrouter.ai/typesafe/jev-1.13).** Fourteen real-world jobs, each with a runnable script, a small labelled dataset and measured results: support triage, database indexing, a file organizer, tagging, category trees, duplicate detection, PII scanning, bank transactions, invoice extraction, search, log triage, moderation, lead scoring and a browser agent.
+**Practical, tested recipes for [TypeSafe's Jev](https://docs.typesafe.ai/introduction), the fast decision model on [OpenRouter](https://openrouter.ai/typesafe/jev-1.13).** Fifteen real-world jobs, each with a runnable script, a small labelled dataset and measured results: support triage, database indexing, a file organizer, tagging, category trees, duplicate detection, PII scanning, bank transactions, invoice extraction, search, log triage, moderation, lead scoring, a browser agent and a Gmail labeler that connects to your own inbox.
 
 Created by **Jeroen Erne** ([nexibeo.com](https://nexibeo.com) · [completeaitraining.com](https://completeaitraining.com)), built together with Claude.
 
@@ -46,10 +46,11 @@ cd jev-cookbook
 cp .env.example .env        # paste your OpenRouter key into .env
 npm run quickstart          # one call, all three question types
 npm run 01                  # any recipe by number
-npm run all                 # recipes 01-13 (about 2 cents)
+npm run all                 # every recipe except the browser agent (about 2 cents)
+npm run gmail               # label your own Gmail (dry run first; setup in recipes/15-gmail-labeler)
 ```
 
-Recipes 01 to 13 have no dependencies. Recipe 14 (the browser agent) needs `npm install` and a Chromium: `npx playwright install chromium`, or set `CHROME_PATH`.
+Recipes 01 to 13 and 15 have no dependencies. Recipe 14 (the browser agent) needs `npm install` and a Chromium: `npx playwright install chromium`, or set `CHROME_PATH`. Recipe 15 needs your own free Google OAuth client to reach your Gmail; its sample inbox works without one.
 
 ## The recipes
 
@@ -71,6 +72,7 @@ Results are from live runs on September 19, 2026 against `~typesafe/jev-latest` 
 | 12 | [Moderation and guardrails](recipes/12-moderation-guardrails) | Screen posts for spam, harassment, prompt injection, doxxing, self-harm | 5 Nouls | 0 harmful posts published, 0 clean posts blocked; every hazard caught |
 | 13 | [Lead scoring](recipes/13-lead-scoring) | Rank inbound sales leads, explainably | 4 Scores + Noul | The top 5 by score are exactly the 5 priority-A leads |
 | 14 | [Browser agent](recipes/14-browser-agent) | Navigate real websites, search and fill forms | Choice + 2 Nouls per step | 5/6 live tasks passed, $0.0005–0.003 each; the failure is a documented near-miss |
+| 15 | [Gmail labeler](recipes/15-gmail-labeler) | Connect your Gmail and label every email by type, "needs reply" and "deadline" | Choice + 2 Nouls, plus code-checked header facts | Sample inbox: category 30/30, needs reply and deadline 93%, phishing 3/3 with no false alarms. Only ever adds labels |
 
 **More every week:** three new recipes land every Monday until mid-October 2026. See the [roadmap](ROADMAP.md).
 

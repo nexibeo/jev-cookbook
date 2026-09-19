@@ -1,5 +1,6 @@
-// Run recipes 01-13 one after another and print each one's headline metrics.
-// Recipe 14 (the browser agent) needs a browser, so run it separately: npm run 14
+// Run every recipe one after another and print each one's headline metrics.
+// Recipe 14 (the browser agent) needs a browser, so run it separately: npm run 14.
+// Recipe 15 runs on its sample inbox here; `npm run gmail` connects to a real mailbox.
 //
 //   npm run all
 import { spawnSync } from 'node:child_process';
@@ -12,7 +13,7 @@ const scripts = {
   '04-multi-label-tagging': 'tag.mjs', '05-taxonomy-tree': 'classify-tree.mjs', '06-dedupe-records': 'dedupe.mjs',
   '07-pii-column-scanner': 'scan.mjs', '08-transaction-categorizer': 'categorize.mjs', '09-extract-by-picking': 'extract.mjs',
   '10-search-rerank': 'search.mjs', '11-log-triage': 'triage-logs.mjs', '12-moderation-guardrails': 'moderate.mjs',
-  '13-lead-scoring': 'score-leads.mjs',
+  '13-lead-scoring': 'score-leads.mjs', '15-gmail-labeler': 'labeler.mjs',
 };
 let cost = 0;
 for (const dir of readdirSync(join(ROOT, 'recipes')).filter((d) => scripts[d]).sort()) {

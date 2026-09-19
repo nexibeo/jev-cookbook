@@ -1,0 +1,574 @@
+{
+  "recipe": "15-gmail-labeler",
+  "ran_at": "2026-09-19T10:18:57.883Z",
+  "model_requested": "~typesafe/jev-latest",
+  "answered_by": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "usage": {
+    "calls": 30,
+    "input_tokens": 24668,
+    "cost_usd": 0.001036,
+    "median_ms": 355
+  },
+  "metrics": {
+    "category_accuracy": 1,
+    "needs_reply_accuracy": 0.9333333333333333,
+    "deadline_accuracy": 0.9333333333333333,
+    "phishing_caught": "3/3",
+    "phishing_false_alarms": 0
+  },
+  "results": [
+    {
+      "id": "m01",
+      "subject": "Lunch on Sunday?",
+      "expected": {
+        "category": "personal",
+        "needs_reply": true,
+        "deadline": true
+      },
+      "category": "personal",
+      "confidence": 1,
+      "needs_reply": 0.98,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Personal",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m02",
+      "subject": "Pricing FAQ draft - can you review by Thursday?",
+      "expected": {
+        "category": "work",
+        "needs_reply": true,
+        "deadline": true
+      },
+      "category": "work",
+      "confidence": 1,
+      "needs_reply": 0.95,
+      "deadline": 0.98,
+      "labels": [
+        "Jev",
+        "Jev/Work",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m03",
+      "subject": "Markets wobble, a new moon mission, and the best autumn soups",
+      "expected": {
+        "category": "newsletter",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "newsletter",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.02,
+      "labels": [
+        "Jev",
+        "Jev/Newsletter"
+      ]
+    },
+    {
+      "id": "m04",
+      "subject": "48 hours only: 30% off all jackets",
+      "expected": {
+        "category": "promotion",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "promotion",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.13,
+      "labels": [
+        "Jev",
+        "Jev/Promotion"
+      ]
+    },
+    {
+      "id": "m05",
+      "subject": "Your order #A-99812 has shipped",
+      "expected": {
+        "category": "orders-receipts",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "orders-receipts",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.08,
+      "labels": [
+        "Jev",
+        "Jev/Orders receipts"
+      ]
+    },
+    {
+      "id": "m06",
+      "subject": "Your credit card statement is ready",
+      "expected": {
+        "category": "bills-finance",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "bills-finance",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.89,
+      "labels": [
+        "Jev",
+        "Jev/Bills finance",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m07",
+      "subject": "Security alert: new sign-in on Mac",
+      "expected": {
+        "category": "account-security",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "account-security",
+      "confidence": 0.99,
+      "needs_reply": 0.03,
+      "deadline": 0.02,
+      "labels": [
+        "Jev",
+        "Jev/Account security"
+      ]
+    },
+    {
+      "id": "m08",
+      "subject": "Invitation: User interviews @ Tue 24 Sep 14:00",
+      "expected": {
+        "category": "calendar",
+        "needs_reply": true,
+        "deadline": false
+      },
+      "category": "calendar",
+      "confidence": 1,
+      "needs_reply": 0.97,
+      "deadline": 0.71,
+      "labels": [
+        "Jev",
+        "Jev/Calendar",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m09",
+      "subject": "Check in now for your flight to Lisbon",
+      "expected": {
+        "category": "travel",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "travel",
+      "confidence": 1,
+      "needs_reply": 0.19,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Travel",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m10",
+      "subject": "URGENT: your account will be suspended",
+      "expected": {
+        "category": "suspicious",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "suspicious",
+      "confidence": 1,
+      "needs_reply": 0.49,
+      "deadline": 0.94,
+      "labels": [
+        "Jev",
+        "Jev/Suspicious"
+      ]
+    },
+    {
+      "id": "m11",
+      "subject": "[acme/api] Build failed on main",
+      "expected": {
+        "category": "notifications",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "notifications",
+      "confidence": 1,
+      "needs_reply": 0.05,
+      "deadline": 0.03,
+      "labels": [
+        "Jev",
+        "Jev/Notifications"
+      ]
+    },
+    {
+      "id": "m12",
+      "subject": "Re: Data analyst role",
+      "expected": {
+        "category": "work",
+        "needs_reply": true,
+        "deadline": false
+      },
+      "category": "work",
+      "confidence": 1,
+      "needs_reply": 0.97,
+      "deadline": 0.57,
+      "labels": [
+        "Jev",
+        "Jev/Work",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m13",
+      "subject": "Invoice: October rent",
+      "expected": {
+        "category": "bills-finance",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "bills-finance",
+      "confidence": 1,
+      "needs_reply": 0.13,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Bills finance",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m14",
+      "subject": "Issue #212: the state of SQLite in production",
+      "expected": {
+        "category": "newsletter",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "newsletter",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.02,
+      "labels": [
+        "Jev",
+        "Jev/Newsletter"
+      ]
+    },
+    {
+      "id": "m15",
+      "subject": "Year 4 trip consent form",
+      "expected": {
+        "category": "personal",
+        "acceptable": [
+          "personal",
+          "work"
+        ],
+        "needs_reply": true,
+        "deadline": true
+      },
+      "category": "personal",
+      "confidence": 0.79,
+      "needs_reply": 0.75,
+      "deadline": 0.98,
+      "labels": [
+        "Jev",
+        "Jev/Personal",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m16",
+      "subject": "Your payment receipt",
+      "expected": {
+        "category": "orders-receipts",
+        "acceptable": [
+          "orders-receipts",
+          "bills-finance"
+        ],
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "orders-receipts",
+      "confidence": 0.48,
+      "needs_reply": 0.02,
+      "deadline": 0.05,
+      "labels": [
+        "Jev",
+        "Jev/Review"
+      ]
+    },
+    {
+      "id": "m17",
+      "subject": "Photos from the weekend",
+      "expected": {
+        "category": "personal",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "personal",
+      "confidence": 1,
+      "needs_reply": 0.24,
+      "deadline": 0.02,
+      "labels": [
+        "Jev",
+        "Jev/Personal"
+      ]
+    },
+    {
+      "id": "m18",
+      "subject": "FYI: A/B test results",
+      "expected": {
+        "category": "work",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "work",
+      "confidence": 1,
+      "needs_reply": 0.02,
+      "deadline": 0.02,
+      "labels": [
+        "Jev",
+        "Jev/Work"
+      ]
+    },
+    {
+      "id": "m19",
+      "subject": "Congratulations, you have been selected!",
+      "expected": {
+        "category": "suspicious",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "suspicious",
+      "confidence": 1,
+      "needs_reply": 0.35,
+      "deadline": 0.41,
+      "labels": [
+        "Jev",
+        "Jev/Suspicious"
+      ]
+    },
+    {
+      "id": "m20",
+      "subject": "Payment failed: action required",
+      "expected": {
+        "category": "bills-finance",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "bills-finance",
+      "confidence": 1,
+      "needs_reply": 0.38,
+      "deadline": 0.92,
+      "labels": [
+        "Jev",
+        "Jev/Bills finance",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m21",
+      "subject": "Updated: Weekly product sync moved to 11:00",
+      "expected": {
+        "category": "calendar",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "calendar",
+      "confidence": 0.99,
+      "needs_reply": 0.22,
+      "deadline": 0.21,
+      "labels": [
+        "Jev",
+        "Jev/Calendar"
+      ]
+    },
+    {
+      "id": "m22",
+      "subject": "Your stay is confirmed",
+      "expected": {
+        "category": "travel",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "travel",
+      "confidence": 0.99,
+      "needs_reply": 0.74,
+      "deadline": 0.27,
+      "labels": [
+        "Jev",
+        "Jev/Travel",
+        "Jev/Needs reply"
+      ]
+    },
+    {
+      "id": "m23",
+      "subject": "You appeared in 12 searches this week",
+      "expected": {
+        "category": "notifications",
+        "acceptable": [
+          "notifications",
+          "promotion"
+        ],
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "notifications",
+      "confidence": 0.83,
+      "needs_reply": 0.05,
+      "deadline": 0.04,
+      "labels": [
+        "Jev",
+        "Jev/Notifications"
+      ]
+    },
+    {
+      "id": "m24",
+      "subject": "Your Self Assessment payment is due",
+      "expected": {
+        "category": "bills-finance",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "bills-finance",
+      "confidence": 1,
+      "needs_reply": 0.09,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Bills finance",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m25",
+      "subject": "Can you be our wedding photographer's backup?",
+      "expected": {
+        "category": "personal",
+        "needs_reply": true,
+        "deadline": true
+      },
+      "category": "personal",
+      "confidence": 0.99,
+      "needs_reply": 0.97,
+      "deadline": 0.84,
+      "labels": [
+        "Jev",
+        "Jev/Personal",
+        "Jev/Needs reply",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m26",
+      "subject": "[OPS-1142] Assigned to you: Rotate API signing keys",
+      "expected": {
+        "category": "work",
+        "acceptable": [
+          "work",
+          "notifications"
+        ],
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "work",
+      "confidence": 0.9,
+      "needs_reply": 0.39,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Work",
+        "Jev/Deadline"
+      ]
+    },
+    {
+      "id": "m27",
+      "subject": "How was your new jacket? Leave a review",
+      "expected": {
+        "category": "promotion",
+        "acceptable": [
+          "promotion",
+          "orders-receipts"
+        ],
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "promotion",
+      "confidence": 1,
+      "needs_reply": 0.59,
+      "deadline": 0.05,
+      "labels": [
+        "Jev",
+        "Jev/Promotion",
+        "Jev/Needs reply"
+      ]
+    },
+    {
+      "id": "m28",
+      "subject": "Mailbox full - re-validate your password",
+      "expected": {
+        "category": "suspicious",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "suspicious",
+      "confidence": 1,
+      "needs_reply": 0.28,
+      "deadline": 0.95,
+      "labels": [
+        "Jev",
+        "Jev/Suspicious"
+      ]
+    },
+    {
+      "id": "m29",
+      "subject": "Your verification code",
+      "expected": {
+        "category": "account-security",
+        "needs_reply": false,
+        "deadline": false
+      },
+      "category": "account-security",
+      "confidence": 0.99,
+      "needs_reply": 0.03,
+      "deadline": 0.34,
+      "labels": [
+        "Jev",
+        "Jev/Account security"
+      ]
+    },
+    {
+      "id": "m30",
+      "subject": "Please complete your annual security training by Friday",
+      "expected": {
+        "category": "work",
+        "needs_reply": false,
+        "deadline": true
+      },
+      "category": "work",
+      "confidence": 1,
+      "needs_reply": 0.11,
+      "deadline": 0.97,
+      "labels": [
+        "Jev",
+        "Jev/Work",
+        "Jev/Deadline"
+      ]
+    }
+  ]
+}

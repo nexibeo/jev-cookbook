@@ -24,6 +24,9 @@
     "13": "node --env-file-if-exists=.env recipes/13-lead-scoring/score-leads.mjs",
     "14": "node --env-file-if-exists=.env recipes/14-browser-agent/run-tests.mjs",
     "browser": "node --env-file-if-exists=.env recipes/14-browser-agent/agent.mjs",
+    "15": "node --env-file-if-exists=.env recipes/15-gmail-labeler/labeler.mjs",
+    "gmail": "node --env-file-if-exists=.env recipes/15-gmail-labeler/labeler.mjs --gmail",
+    "test:gmail": "node --env-file-if-exists=.env --test recipes/15-gmail-labeler/test/gmail.test.mjs",
     "all": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning scripts/run-all.mjs"
   },
   "optionalDependencies": {

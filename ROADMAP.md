@@ -4,7 +4,7 @@ New recipes arrive every Monday until mid-October 2026, three at a time. Each on
 
 ## Week of September 21, 2026
 
-- [ ] **15 · Email inbox labels:** label incoming email (newsletter, receipt, personal, work request, calendar, spam) and flag "needs a reply" and "has a deadline".
+- [x] **15 · Gmail labeler:** connect your Gmail and label incoming email (newsletter, receipt, personal, work, calendar, suspicious…) with "needs reply" and "deadline". Published early, on September 19.
 - [ ] **16 · CV screening against a job description:** composite scores per requirement, hard requirements checked in code, and an explanation per candidate.
 - [ ] **17 · Review analysis by aspect:** for each product review, which aspects are mentioned (price, quality, delivery, support…) and the sentiment for each.
 
