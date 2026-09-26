@@ -4,6 +4,8 @@
 
 **Practical, tested recipes for [TypeSafe's Jev](https://docs.typesafe.ai/introduction), the fast decision model on [OpenRouter](https://openrouter.ai/typesafe/jev-1.13).** Fifteen real-world jobs, each with a runnable script, a small labelled dataset and measured results: support triage, database indexing, a file organizer, tagging, category trees, duplicate detection, PII scanning, bank transactions, invoice extraction, search, log triage, moderation, lead scoring, a browser agent and a Gmail labeler that connects to your own inbox.
 
+> **Want Jev in a real browser?** [Jev Browser Control](https://github.com/nexibeo/jev-browser-control) is the sibling project: an MCP server that lets Claude or Codex drive Chrome, with Jev picking every click, keystroke and scroll. Recipe 14 below is the bare loop; that repo is the finished tool.
+
 Created by **[Jeroen Erne](https://www.linkedin.com/in/jeroenerne/)** ([nexibeo.com](https://nexibeo.com) · [completeaitraining.com](https://completeaitraining.com)), built together with Claude.
 
 ## What Jev is, in 30 seconds
